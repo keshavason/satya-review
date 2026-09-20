@@ -1,0 +1,13 @@
+{
+  "schema": "satya-receipt.v1",
+  "created_at": "2026-09-20T09:13:59.904Z",
+  "files": [
+    {
+      "path": "SYNTHETIC.txt",
+      "size": 77,
+      "sha256": "9264f16e020199720bf3e2fab0578962ce9fbad2d69be832778fb958b424c570"
+    }
+  ],
+  "review_sha256": "49a70be21857e117b5442c07e543b1dac714bd040e6141f419e00bad7b377e6f",
+  "manifest_sha256": "508ecd7a79b6b4de295ac2aa6a9e8116d7ea82e02ee7e541fb720be16cc69aee"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "satya-review",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local bilingual delivery reviews with file-change detection, without automatic ethical certification.",
+  "type": "module",
+  "license": "MIT",
+  "engines": { "node": ">=22" },
+  "bin": { "satya-review": "bin/satya.mjs" },
+  "scripts": { "test": "node --test test/*.test.mjs" },
+  "files": ["bin/", "src/", "README.md", "README.en.md", "LICENSE", "docs/", "examples/"]
+}

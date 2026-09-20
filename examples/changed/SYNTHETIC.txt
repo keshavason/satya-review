@@ -1,0 +1,2 @@
+Fictional delivery for local demonstration. No real clients or transactions.
+Intentional modification after capture: requires a new review.

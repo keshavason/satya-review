@@ -1,0 +1,2 @@
+# Receipts hash exact bytes. Prevent checkout-specific line-ending conversion.
+* -text

@@ -1,0 +1,30 @@
+{
+  "schema": "satya-review.v1",
+  "title": "Synthetic changed delivery / Entrega ficticia changed",
+  "reviewed_at": "2026-09-20",
+  "reviewer": {
+    "kind": "ai",
+    "name": "Synthetic example generator; not a human reviewer"
+  },
+  "decision": {
+    "status": "proceed",
+    "rationale": "Only demonstrate local file-change checks using fictional text."
+  },
+  "questions": {
+    "purpose": "Explain the local review workflow using a fictional delivery / Explicar la revisión local con una entrega ficticia.",
+    "affected_parties": "Readers of this example; no customers or personal records / Lectores del ejemplo; sin datos de clientes.",
+    "harm": "A matching hash could be mistaken for certification; this example explicitly denies that interpretation.",
+    "uncertainty": "No operational, fiscal or human-acceptance result is demonstrated.",
+    "alternatives": "A written checklist may suffice; use this example only when file-change detection is useful.",
+    "authority": "This fictional decision covers a local demonstration only; it grants no authority over real systems.",
+    "care": "No account, network call or paid model is required. Reading and maintenance still consume time.",
+    "repair": "If content changes, examine the difference and preserve relevant history before recapturing."
+  },
+  "evidence": [
+    {
+      "source": "SYNTHETIC.txt",
+      "claim": "This file explicitly labels the delivery fictional.",
+      "classification": "observed"
+    }
+  ]
+}

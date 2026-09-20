@@ -1,0 +1,54 @@
+name: Informe de error / Bug report
+description: Documenta un fallo reproducible con datos sintéticos / Document a reproducible defect with synthetic data
+title: "[bug] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por informar. No incluyas datos personales, credenciales ni archivos de clientes.
+        Thank you for reporting. Do not include personal data, credentials or client files.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema / Problem
+      description: ¿Qué ocurrió y qué impacto tiene? / What happened and what is the impact?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproducción mínima / Minimal reproduction
+      description: Pasos y ejemplo sintético / Steps and a synthetic example
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Resultado esperado / Expected result
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Versión o commit / Version or commit
+      placeholder: 0.1.0 or commit SHA
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Entorno probado / Tested environment
+      placeholder: Node 22.x, Windows 11 / Ubuntu 24.04
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Comprobaciones / Checks
+      options:
+        - label: He usado datos sintéticos y retirado secretos / I used synthetic data and removed secrets
+          required: true
+        - label: He buscado incidencias existentes / I searched existing issues
+          required: true
+

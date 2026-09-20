@@ -23,4 +23,3 @@ Explica el problema, beneficiarios y alcance. / Explain the problem, beneficiari
 ## Riesgo y recuperación / Risk and recovery
 
 Describe el riesgo residual y cómo retirar o revertir el cambio. / Describe residual risk and how to withdraw or revert the change.
-

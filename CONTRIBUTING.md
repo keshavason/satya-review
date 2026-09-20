@@ -48,4 +48,3 @@ Describe en el pull request:
 El mantenimiento puede pedir un cambio, reducir el alcance o rechazar una propuesta sin juzgar a la persona. Un hash coincidente, un formulario completo o una revisión IA no certifican ética, seguridad, legalidad ni aprobación humana.
 
 In the pull request, describe purpose and scope, changed behavior, executed tests, privacy and external effects, known limits, rollback, and the real AI/human review performed. Maintenance decisions concern the contribution, never a person's dignity. A matching hash, completed form or AI review does not certify ethics, security, legality or human approval.
-

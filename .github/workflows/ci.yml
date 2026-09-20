@@ -31,4 +31,3 @@ jobs:
           node-version: 22
       - name: Run tests
         run: npm test
-

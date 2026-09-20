@@ -25,4 +25,3 @@ When safe, include the affected version or commit, impact and preconditions, a m
 El mantenedor comprobará el alcance antes de afirmar que un problema existe o está corregido. La recepción de un informe no garantiza recompensa, plazo ni aceptación. La divulgación coordinada conservará atribución cuando sea posible y no expondrá datos privados innecesarios.
 
 The maintainer will verify scope before claiming that a problem exists or is fixed. Receiving a report does not guarantee a bounty, deadline or acceptance. Coordinated disclosure will preserve attribution when possible and avoid unnecessary private data.
-

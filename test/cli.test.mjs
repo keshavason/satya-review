@@ -42,11 +42,11 @@ async function fixture(t) {
   await mkdir(root);
   t.after(async () => {
     // Cleanup can delete only the real, generated fixture directory under this test's base.
-    const resolved = path.resolve(directory);
-    const base = path.resolve(temporaryBase);
-    assert.ok(resolved.startsWith(base + path.sep));
+    const resolved = await realpath(path.resolve(directory));
+    const base = await realpath(path.resolve(temporaryBase));
+    const relative = path.relative(base, resolved);
+    assert.ok(relative && !relative.startsWith('..') && !path.isAbsolute(relative));
     assert.ok(path.basename(resolved).startsWith('case-'));
-    assert.equal(await realpath(resolved), resolved);
     await rm(resolved, { recursive: true, force: true });
   });
   return { directory, root };

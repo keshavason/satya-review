@@ -2,6 +2,8 @@
 
 [English](README.en.md)
 
+[![Verificación en Linux y Windows](https://github.com/keshavason/satya-review/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/keshavason/satya-review/actions/workflows/ci.yml)
+
 Una revisión legible de una entrega, vinculada a sus archivos. Responde ocho preguntas sobre finalidad, afectados, daños, incertidumbre, alternativas, autoridad, cuidado y reparación. Después comprueba si cambiaron los archivos o la revisión.
 
 **Un documento completo y unos hashes coincidentes no certifican ética, seguridad, cumplimiento legal ni aprobación humana.** La identidad y las decisiones del revisor son declaraciones, no credenciales autenticadas.
@@ -53,6 +55,8 @@ node bin/satya.mjs verify examples/changed
 ```text
 npm test
 ```
+
+GitHub Actions ejecuta esta misma suite con Node.js 22 en Linux y Windows. El indicador superior muestra el estado actual de esa comprobación; no certifica los usos que se hagan de la herramienta.
 
 Consulta [el alcance probado](docs/VALIDATION.md), [el modelo de revisión](docs/REVIEW.md), [las limitaciones y atribuciones](docs/DECISION.md) y [el ejemplo de módulo fiscal futuro](docs/FISCAL-MODULE.md). Las pruebas y el uso interno no demuestran demanda de mercado ni ahorro económico. No hay telemetría, llamadas de red, dependencias de ejecución ni API de pago en esta herramienta. Ejecutarla y mantenerla sí tiene coste de equipo y tiempo.
 

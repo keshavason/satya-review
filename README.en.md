@@ -2,6 +2,8 @@
 
 [Español](README.md)
 
+[![Verification on Linux and Windows](https://github.com/keshavason/satya-review/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/keshavason/satya-review/actions/workflows/ci.yml)
+
 A readable delivery review tied to its files. Answer eight questions about purpose, affected parties, harm, uncertainty, alternatives, authority, care and repair. Then check whether the files or review have changed.
 
 **Completed fields and matching hashes do not certify ethics, security, legal compliance or human approval.** Reviewer identities and decisions are unverified declarations.
@@ -42,6 +44,8 @@ node bin/satya.mjs report examples/pending --lang en
 node bin/satya.mjs verify examples/changed
 npm test
 ```
+
+GitHub Actions runs the same suite with Node.js 22 on Linux and Windows. The badge above shows the current status of that check; it does not certify how the tool is used.
 
 The changed example must report an intentional modification after capture. Examples are fictional, with no real clients or fiscal transactions. See [validation](docs/VALIDATION.md), [review fields](docs/REVIEW.md), [design rationale and attribution](docs/DECISION.md), and [future fiscal product scope](docs/FISCAL-MODULE.md).
 

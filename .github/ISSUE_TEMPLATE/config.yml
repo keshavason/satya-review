@@ -1,0 +1,6 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Vulnerabilidad de seguridad / Security vulnerability
+    url: https://github.com/keshavason/satya-review/security/policy
+    about: Consulta el canal privado y los límites antes de compartir detalles sensibles. / Check the private channel and limits before sharing sensitive details.
+

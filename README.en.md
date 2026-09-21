@@ -34,7 +34,7 @@ Capture after actually reviewing the content. Capturing again replaces the recei
 
 All regular files inside the selected root are inventoried recursively, except root `.git/` and `.satya/`. Git ignore rules are not applied. The review file is bound separately by its hash; other metadata in `.satya/` is excluded. Symlinks, junctions and unsupported paths are rejected. Choose a clean delivery directory without private customer data, secrets or large dependencies.
 
-The tool checks additions, removals and modifications. It does not fetch evidence sources, authenticate reviewers, sign receipts, inspect for malware or continuously monitor files. Anyone able to rewrite both content and receipt can create a new matching snapshot. Snapshots are not atomic under concurrent writes. File names and review answers may themselves be sensitive, even though nothing is transmitted.
+The tool checks additions, removals and modifications. It does not fetch evidence sources, authenticate reviewers, sign receipts, inspect for malware or continuously monitor files. Anyone able to rewrite both content and receipt can create a new matching snapshot. Identity checks and final-file descriptors reject substitutions that the process observes, but portable Node APIs do not provide handle-relative traversal on every supported platform. Snapshots are not atomic under concurrent writes: use a project tree that an untrusted concurrent actor cannot modify. File names and review answers may themselves be sensitive, even though nothing is transmitted.
 
 ## Synthetic examples and checks
 

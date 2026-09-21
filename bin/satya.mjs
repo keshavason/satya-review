@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { initReview, capture, verify, renderReport, exitCode, LIMITS } from '../src/core.mjs';
+import { initReview, capture, verify, report, exitCode, LIMITS } from '../src/core.mjs';
 
 const [command, root, ...options] = process.argv.slice(2);
 try {
@@ -12,9 +12,9 @@ try {
       throw new Error('Usage: satya report <root> [--lang es|en]');
     }
     if (options.length) lang = options[1];
-    const result = verify(root);
-    process.stdout.write(renderReport(root, lang));
-    process.exitCode = exitCode(result);
+    const evaluated = report(root, lang);
+    process.stdout.write(evaluated.markdown);
+    process.exitCode = exitCode(evaluated.result);
   } else {
     if (options.length !== 0) throw new Error(`Unexpected arguments for ${command}.`);
     const result = command === 'init' ? initReview(root) : command === 'capture' ? capture(root) : verify(root);

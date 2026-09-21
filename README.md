@@ -38,7 +38,7 @@ Incluye recursivamente todos los archivos regulares dentro de la carpeta indicad
 
 Rechaza enlaces simbólicos, junctions y rutas no admitidas. La carpeta raíz define el alcance: selecciona una entrega limpia, sin secretos, datos de clientes ni dependencias voluminosas. Aunque no se transmite nada, los nombres de archivos y las respuestas también pueden ser confidenciales.
 
-Comprueba cambios, altas y bajas. No descarga ni verifica las fuentes citadas. No autentica revisores, no firma recibos, no detecta malware y no vigila continuamente la carpeta. Quien pueda cambiar archivos, revisión y recibo puede reconstruir una coincidencia. El inventario no es una transacción atómica frente a escrituras simultáneas.
+Comprueba cambios, altas y bajas. No descarga ni verifica las fuentes citadas. No autentica revisores, no firma recibos, no detecta malware y no vigila continuamente la carpeta. Quien pueda cambiar archivos, revisión y recibo puede reconstruir una coincidencia. Las comprobaciones de identidad y los descriptores de archivos finales rechazan sustituciones observadas, pero las API portables de Node no permiten recorrer por descriptor en todas las plataformas soportadas. El inventario no es una transacción atómica frente a escrituras simultáneas: usa un árbol que ningún actor concurrente no confiable pueda modificar.
 
 ## Tres ejemplos sintéticos
 

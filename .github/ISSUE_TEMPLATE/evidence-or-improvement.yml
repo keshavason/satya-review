@@ -1,0 +1,76 @@
+name: Mejora o petición de evidencia / Improvement or evidence request
+description: Propón una mejora verificable o pide evidencia que falta / Propose a verifiable improvement or request missing evidence
+title: "[proposal] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por ayudar a mejorar el proyecto. Separa lo observado de lo inferido y no incluyas datos personales, secretos ni archivos de clientes.
+        Thank you for helping improve the project. Separate observations from inferences and do not include personal data, secrets or client files.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Tipo de propuesta / Proposal type
+      options:
+        - Mejora de producto / Product improvement
+        - Nueva comprobación o caso negativo / New check or negative case
+        - Documentación o accesibilidad / Documentation or accessibility
+        - Petición de evidencia / Evidence request
+    validations:
+      required: true
+  - type: textarea
+    id: need
+    attributes:
+      label: Necesidad comprobable / Verifiable need
+      description: Describe el problema, la afirmación o la evidencia que falta. / Describe the problem, claim or missing evidence.
+    validations:
+      required: true
+  - type: textarea
+    id: current-evidence
+    attributes:
+      label: Evidencia actual / Current evidence
+      description: Incluye fuentes, fecha, versión y distingue observado, probado e inferido. / Include sources, date and version, and distinguish observed, tested and inferred.
+      placeholder: Enlaces, salidas reproducibles o "no disponible" / Links, reproducible outputs or "not available"
+    validations:
+      required: true
+  - type: textarea
+    id: affected
+    attributes:
+      label: Personas y usos afectados / Affected people and uses
+      description: ¿Quién se beneficia, quién asume costes o riesgos y en qué contexto? / Who benefits, who bears costs or risks, and in what context?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Cambio mínimo propuesto / Smallest proposed change
+      description: Explica el resultado verificable, no sólo una solución técnica. / Explain the verifiable outcome, not only a technical solution.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternativas y opción de no actuar / Alternatives and no-change option
+      description: Incluye una alternativa más simple y qué ocurre si no se cambia nada. / Include a simpler alternative and what happens if nothing changes.
+    validations:
+      required: true
+  - type: textarea
+    id: limits
+    attributes:
+      label: Límites, riesgos y retirada / Limits, risks and withdrawal
+      description: Indica incertidumbre, riesgo residual y cómo retirar o revertir. / State uncertainty, residual risk and how to withdraw or revert.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Comprobaciones / Checks
+      options:
+        - label: He buscado incidencias y propuestas existentes / I searched existing issues and proposals
+          required: true
+        - label: He usado datos sintéticos y retirado secretos y datos personales / I used synthetic data and removed secrets and personal data
+          required: true
+        - label: He declarado la asistencia de IA cuando influyó materialmente / I disclosed material AI assistance
+          required: true
+

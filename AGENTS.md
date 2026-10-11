@@ -11,6 +11,10 @@ This file orients agents **working on this repository**. It is not a universal A
 
 If serious harm is plausible and safeguards, context or authorization are inadequate, record **pending** or **revise**; do not call documentation an approval. See [the full foundation](docs/ETHICAL-FOUNDATION.md) and [the review model](docs/REVIEW.md).
 
+## Reflective review / Revisión del propio juicio
+
+For consequential proposals, consult the [bounded agent–mirror–guide–meta-review design](docs/REFLECTIVE-LOOP.md). Invite substantive objections and independent evidence, preserve dissent and cumulative risks, and reopen decisions after material change. Never treat recursive agreement as proof or authorization. This is guidance for future orchestration, **not** an implemented reviewer or an instruction to spawn agents autonomously.
+
 ## Repository-specific boundaries
 
 - `satya-review` documents eight review fields and checks the integrity of locally captured files; it does **not** prove non-harm, certify ethics, authenticate approvers or grant deployment permission.

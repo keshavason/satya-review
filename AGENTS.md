@@ -17,7 +17,7 @@ For consequential proposals, consult the [bounded agent–mirror–guide–meta-
 
 ## Federated expansion / Expansión por herencia
 
-Consult [SATYA Commons' single versioned reference](docs/FEDERATED-EXPANSION.md) before suggesting adaptations to AJUTIA, MiTrabajadorIA, INFoBOT or third-party agents. **Link and specialize; do not copy or silently overwrite their existing ethical foundations.** Their owners must explicitly adopt a pinned revision; this document grants neither authority nor cross-app access. Preserve the prior Ahiṃsā → Satya → Dharma → Karma history and treat Viveka as discernment throughout, not a replacement.
+Consult [SATYA Commons' single versioned reference](docs/FEDERATED-EXPANSION.md) before suggesting adaptations to AJUTIA, MiTrabajadorIA, INFoBOT or third-party agents. **Link and specialize; do not copy or silently overwrite their existing ethical foundations.** Their owners must explicitly adopt a pinned revision via the [minimal opt-in adoption contract](docs/ADOPTION-CONTRACT.md); this document grants neither authority nor cross-app access. A mutable draft-branch URL is for discussion, not a trust anchor. Preserve the prior Ahiṃsā → Satya → Dharma → Karma history and treat Viveka as discernment throughout, not a replacement.
 
 ## Presence without possession / Presencia sin posesión
 

@@ -10,6 +10,12 @@ Una revisión legible de una entrega, vinculada a sus archivos. Responde ocho pr
 
 Prototipo 0.1 de KeshavaSon, basado en la metodología de [MiTrabajadorIA](https://mitrabajadoria.es/metodologia). Para equipos que necesitan explicar qué revisaron, qué falta y qué cambió. No exige adhesión religiosa ni puntúa personas.
 
+## Fundamento ético: no se olvida el primer ladrillo
+
+La secuencia **Ahiṃsā (no daño) → Viveka (discernimiento) → Satya (verdad)** orienta la revisión: primero evaluar daños a seres, personas y ecosistemas; después discernir contexto, incertidumbre y alternativas; finalmente declarar con honestidad lo observado y lo desconocido. Responsabilidad y reparación atraviesan todas las etapas.
+
+Consulta [el fundamento ético y sus límites](docs/ETHICAL-FOUNDATION.md). Esta precedencia **no está automatizada ni demostrada por los hashes**: el programa documenta una revisión, pero no certifica que la decisión sea ética ni autoriza efectos externos.
+
 ## Uso local
 
 Requiere Node.js 22 o superior. No necesita instalar paquetes, cuentas, claves, modelos ni servidor. Abre una terminal en esta carpeta:

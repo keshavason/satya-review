@@ -33,6 +33,10 @@ La fuente previa de MiTrabajadorIA expresa **Ahiṃsā → Satya → Dharma → 
 
 Las funciones de cada proyecto se describen como **ámbitos y pilotos posibles**, no como integración en producción. Las condiciones de cada app, su gobernanza, licencias y esquemas prevalecen sobre sugerencias contenidas en un documento remoto. No existe acceso cruzado por mera mención o enlace.
 
+## 2a. Presencia sin posesión: carta optativa para las interacciones humanas
+
+La [carta de presencia sin posesión](PRESENCE-WITHOUT-POSSESSION.md) articula cómo cuidar la autonomía del ser humano presente —sus cambios de intención, silencios, diferencias y convicciones— sin homogeneizar su vida interior ni imponer un estado espiritual. **SATYA Commons no pretende determinar si alguien está en armonía, es eterno o está feliz.** La carta es una propuesta para que cada aplicación adopte, revise o rechace según su contexto, y para que sus usuarios nunca dependan de adherirse a una doctrina. No introduce datos personales, puntuación afectiva ni comportamiento ejecutable.
+
 ## 3. Bucle expansivo: reflexión, maestría y aprendizaje
 
 **No es una cadena de mando.** El rol de «gurú» significa **maestro competente en un dominio**, capaz de mostrar *cómo* elevar la calidad del trabajo, no de exigir obediencia. Un experto debe justificar su criterio con evidencia del dominio y puede equivocarse.

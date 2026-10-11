@@ -16,6 +16,10 @@ La secuencia **Ahiṃsā (no daño) → Viveka (discernimiento) → Satya (verda
 
 Consulta [el fundamento ético y sus límites](docs/ETHICAL-FOUNDATION.md). Esta precedencia **no está automatizada ni demostrada por los hashes**: el programa documenta una revisión, pero no certifica que la decisión sea ética ni autoriza efectos externos.
 
+## Bucle reflexivo de agentes y espejos (propuesta)
+
+El [protocolo de revisión multinivel](docs/REFLECTIVE-LOOP.md) explora el ciclo **agente → espejo crítico → guía falible → metarrevisión**, con límites, disenso documentado, efectos acumulativos y reapertura cuando cambian las evidencias. Mantiene Ahiṃsā → Viveka → Satya en cada vuelta. **Es diseño revisable, no una función automática del prototipo 0.1.**
+
 ## Uso local
 
 Requiere Node.js 22 o superior. No necesita instalar paquetes, cuentas, claves, modelos ni servidor. Abre una terminal en esta carpeta:

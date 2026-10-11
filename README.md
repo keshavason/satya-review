@@ -28,6 +28,8 @@ La [arquitectura SATYA Commons](docs/FEDERATED-EXPANSION.md) propone **una refer
 
 La [carta de presencia sin posesión](docs/PRESENCE-WITHOUT-POSSESSION.md) traduce respeto radical, escucha, posibilidad de silencio, libertad espiritual y cuidado del presente en criterios de interacción y pruebas adversariales. Honra el significado personal de sat-cit-ānanda sin imponer creencias, medir estados interiores ni prometer felicidad. Es una capa voluntaria para futuras adaptaciones de AJUTIA, MiTrabajadorIA e INFoBOT; **no está implementada ni certificada**.
 
+La [auditoría cruzada del 12 de octubre](docs/CROSS-REPOSITORY-AUDIT-2026-10-12.md) documenta hallazgos corregidos, evidencias de CI y riesgos pendientes entre los repositorios. No es revisión humana independiente ni prueba de funcionamiento federado.
+
 ## Uso local
 
 Requiere Node.js 22 o superior. No necesita instalar paquetes, cuentas, claves, modelos ni servidor. Abre una terminal en esta carpeta:

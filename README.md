@@ -20,6 +20,10 @@ Consulta [el fundamento ético y sus límites](docs/ETHICAL-FOUNDATION.md). Esta
 
 El [protocolo de revisión multinivel](docs/REFLECTIVE-LOOP.md) explora el ciclo **agente → espejo crítico → guía falible → metarrevisión**, con límites, disenso documentado, efectos acumulativos y reapertura cuando cambian las evidencias. Mantiene Ahiṃsā → Viveka → Satya en cada vuelta. **Es diseño revisable, no una función automática del prototipo 0.1.**
 
+## Expansión federada sin duplicación (propuesta)
+
+La [arquitectura SATYA Commons](docs/FEDERATED-EXPANSION.md) propone **una referencia versionada y adaptaciones voluntarias por proyecto**, sin copiar íntegramente el fundamento ni conferir permisos entre aplicaciones. AJUTIA aporta la gobernanza cooperativa, MiTrabajadorIA la formación y maestría de dominio, INFoBOT la gestión de fuentes; SATYA Review conserva la trazabilidad documental. Las aplicaciones hermanas no se han modificado ni conectado automáticamente mediante esta propuesta.
+
 ## Uso local
 
 Requiere Node.js 22 o superior. No necesita instalar paquetes, cuentas, claves, modelos ni servidor. Abre una terminal en esta carpeta:

@@ -18,6 +18,8 @@ The [bounded reflective loop](docs/REFLECTIVE-LOOP.md) proposes a critical mirro
 
 Nothing here connects AJUTIA, MiTrabajadorIA, INFoBOT or third-party agents, grants permission, changes the `satya-review.v1` schema, or deploys automated reviewers. The linked proposals remain in an open draft pull request.
 
+The [12 October cross-repository audit](docs/CROSS-REPOSITORY-AUDIT-2026-10-12.md) records corrections, CI evidence and remaining risks. It is **not** independent human review or proof of a working federated system.
+
 ## Run locally
 
 Requires Node.js 22+. No package installation, account, key, model or server is needed. From this folder, point the commands at an existing delivery directory:

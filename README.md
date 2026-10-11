@@ -12,7 +12,7 @@ Prototipo 0.1 de KeshavaSon, basado en la metodología de [MiTrabajadorIA](https
 
 ## Fundamento ético: no se olvida el primer ladrillo
 
-La secuencia **Ahiṃsā (no daño) → Viveka (discernimiento) → Satya (verdad)** orienta la revisión: primero evaluar daños a seres, personas y ecosistemas; después discernir contexto, incertidumbre y alternativas; finalmente declarar con honestidad lo observado y lo desconocido. Responsabilidad y reparación atraviesan todas las etapas.
+La secuencia **Ahiṃsā (no daño) → Viveka (discernimiento) → Satya (verdad)** orienta la revisión: examinar primero los daños a seres, personas y ecosistemas; discernir contexto, incertidumbre y alternativas; y declarar honestamente lo observado y lo desconocido **desde el comienzo y durante toda la revisión**. Responsabilidad y reparación atraviesan todas las etapas.
 
 Consulta [el fundamento ético y sus límites](docs/ETHICAL-FOUNDATION.md). Esta precedencia **no está automatizada ni demostrada por los hashes**: el programa documenta una revisión, pero no certifica que la decisión sea ética ni autoriza efectos externos.
 

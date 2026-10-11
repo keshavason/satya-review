@@ -22,7 +22,7 @@ El [protocolo de revisión multinivel](docs/REFLECTIVE-LOOP.md) explora el ciclo
 
 ## Expansión federada sin duplicación (propuesta)
 
-La [arquitectura SATYA Commons](docs/FEDERATED-EXPANSION.md) propone **una referencia versionada y adaptaciones voluntarias por proyecto**, sin copiar íntegramente el fundamento ni conferir permisos entre aplicaciones. AJUTIA aporta la gobernanza cooperativa, MiTrabajadorIA la formación y maestría de dominio, INFoBOT la gestión de fuentes; SATYA Review conserva la trazabilidad documental. Las aplicaciones hermanas no se han modificado ni conectado automáticamente mediante esta propuesta.
+La [arquitectura SATYA Commons](docs/FEDERATED-EXPANSION.md) propone **una referencia versionada y adaptaciones voluntarias por proyecto**, sin copiar íntegramente el fundamento ni conferir permisos entre aplicaciones. AJUTIA aporta la gobernanza cooperativa, MiTrabajadorIA la formación y maestría de dominio, INFoBOT la gestión de fuentes; SATYA Review conserva la trazabilidad documental. Las aplicaciones hermanas no se han modificado ni conectado automáticamente mediante esta propuesta. El [contrato mínimo de adopción](docs/ADOPTION-CONTRACT.md) distingue leer una propuesta de adoptarla formalmente: exige responsable, revisión fijada por commit, diferencias, evidencia y derecho de retirada. **Enlaces a ramas de borrador son mutables, no adopciones verificadas.**
 
 ## Presencia sin posesión: libertad interior y acompañamiento (propuesta)
 

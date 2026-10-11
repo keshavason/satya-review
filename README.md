@@ -24,6 +24,10 @@ El [protocolo de revisión multinivel](docs/REFLECTIVE-LOOP.md) explora el ciclo
 
 La [arquitectura SATYA Commons](docs/FEDERATED-EXPANSION.md) propone **una referencia versionada y adaptaciones voluntarias por proyecto**, sin copiar íntegramente el fundamento ni conferir permisos entre aplicaciones. AJUTIA aporta la gobernanza cooperativa, MiTrabajadorIA la formación y maestría de dominio, INFoBOT la gestión de fuentes; SATYA Review conserva la trazabilidad documental. Las aplicaciones hermanas no se han modificado ni conectado automáticamente mediante esta propuesta.
 
+## Presencia sin posesión: libertad interior y acompañamiento (propuesta)
+
+La [carta de presencia sin posesión](docs/PRESENCE-WITHOUT-POSSESSION.md) traduce respeto radical, escucha, posibilidad de silencio, libertad espiritual y cuidado del presente en criterios de interacción y pruebas adversariales. Honra el significado personal de sat-cit-ānanda sin imponer creencias, medir estados interiores ni prometer felicidad. Es una capa voluntaria para futuras adaptaciones de AJUTIA, MiTrabajadorIA e INFoBOT; **no está implementada ni certificada**.
+
 ## Uso local
 
 Requiere Node.js 22 o superior. No necesita instalar paquetes, cuentas, claves, modelos ni servidor. Abre una terminal en esta carpeta:

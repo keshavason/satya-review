@@ -11,7 +11,7 @@ Un agente puede equivocarse; su espejo también; un guía o revisor de nivel sup
 
 - **Agente (A):** propone una acción o una abstención; declara propósito, afectados, evidencia, incertidumbre, alternativas y riesgos.
 - **Espejo (E):** reexamina la propuesta **con independencia crítica**; busca daños omitidos, datos contradictorios, sesgos, consecuencias indirectas y opciones menos dañinas.
-- **Guía / gurú funcional (G):** facilita discernimiento de conflictos entre A y E; pregunta por criterios, responsabilidad y contexto, **sin reclamar infalibilidad ni privilegio moral**. Puede ser un revisor humano cualificado o un rol explícito de revisión, nunca una identidad espiritual presumida del modelo.
+- **Maestro / gurú de dominio (G):** especialista contrastable que enseña **cómo elevar la calidad del trabajo**: identifica la contribución válida del agente, explica la mejora, sus criterios técnicos y cuándo dejaría de ser válida; propone una prueba de transferencia a otro problema. También ayuda a discernir desacuerdos entre A y E, **sin imponer obediencia, reclamar infalibilidad ni privilegio moral**. Puede ser una persona experta o un rol explícito de revisión con competencia evaluada, nunca una identidad espiritual presumida del modelo.
 - **Metarrevisión / guía de guías (M):** examina **la calidad del proceso y de las revisiones**, posibles acuerdos aparentes, conflictos de interés, fallos sistémicos y daños acumulados entre múltiples agentes.
 - **Persona responsable:** conserva una autoridad específica, verificable y revocable para cualquier efecto externo que la requiera. Ningún consenso entre modelos sustituye autorización, derechos o supervisión legítima.
 

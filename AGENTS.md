@@ -15,6 +15,10 @@ If serious harm is plausible and safeguards, context or authorization are inadeq
 
 For consequential proposals, consult the [bounded agent–mirror–guide–meta-review design](docs/REFLECTIVE-LOOP.md). Invite substantive objections and independent evidence, preserve dissent and cumulative risks, and reopen decisions after material change. Never treat recursive agreement as proof or authorization. This is guidance for future orchestration, **not** an implemented reviewer or an instruction to spawn agents autonomously.
 
+## Federated expansion / Expansión por herencia
+
+Consult [SATYA Commons' single versioned reference](docs/FEDERATED-EXPANSION.md) before suggesting adaptations to AJUTIA, MiTrabajadorIA, INFoBOT or third-party agents. **Link and specialize; do not copy or silently overwrite their existing ethical foundations.** Their owners must explicitly adopt a pinned revision; this document grants neither authority nor cross-app access. Preserve the prior Ahiṃsā → Satya → Dharma → Karma history and treat Viveka as discernment throughout, not a replacement.
+
 ## Repository-specific boundaries
 
 - `satya-review` documents eight review fields and checks the integrity of locally captured files; it does **not** prove non-harm, certify ethics, authenticate approvers or grant deployment permission.

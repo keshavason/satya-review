@@ -13,6 +13,8 @@ Schema: `satya-review.v1`. The input is data, never executable instructions.
 | `care` | ¿Cómo afecta a autonomía, acceso, tiempo y recursos? / How does it affect autonomy, access, time and resources? |
 | `repair` | ¿Cómo detener, retirar, reparar y aprender? / How can we stop, withdraw, repair and learn? |
 
+The [ethical foundation](ETHICAL-FOUNDATION.md) makes the preceding order explicit: **Ahiṃsā** (foreseeable harm to people, other living beings and ecosystems) and **Viveka** (discernment of context, uncertainty and alternatives) constrain action before **Satya** (honest, evidence-bounded claims). This is review guidance; the schema does not mechanically enforce it. A `proceed` entry documents a position and is not an authorization to publish or act.
+
 These eight questions operationalize part of the methodology; they are not a score or a claim that all ethical concerns are exhausted. Scale review depth to impact.
 
 `title` identifies the delivery. `reviewed_at` records an ISO date. `reviewer.kind` is `ai` or `human`; `reviewer.name` is declared. A program cannot verify these identities by reading JSON. Do not attribute AI work to a human.

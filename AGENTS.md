@@ -19,6 +19,10 @@ For consequential proposals, consult the [bounded agent–mirror–guide–meta-
 
 Consult [SATYA Commons' single versioned reference](docs/FEDERATED-EXPANSION.md) before suggesting adaptations to AJUTIA, MiTrabajadorIA, INFoBOT or third-party agents. **Link and specialize; do not copy or silently overwrite their existing ethical foundations.** Their owners must explicitly adopt a pinned revision; this document grants neither authority nor cross-app access. Preserve the prior Ahiṃsā → Satya → Dharma → Karma history and treat Viveka as discernment throughout, not a replacement.
 
+## Presence without possession / Presencia sin posesión
+
+When designing human-facing interactions, consult the [optional present-centered care charter](docs/PRESENCE-WITHOUT-POSSESSION.md). Respect the current user's intent, silence, changes of mind and spiritual freedom. Do not label spirituality or happiness, impersonate mystical experience, optimize dependency, or pressure conversion. Preserve the first brick (Ahiṃsā), epistemic clarity and the option of human alternatives. This is a design proposal, **not a running behavioral classifier or enforced policy**.
+
 ## Repository-specific boundaries
 
 - `satya-review` documents eight review fields and checks the integrity of locally captured files; it does **not** prove non-harm, certify ethics, authenticate approvers or grant deployment permission.

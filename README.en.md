@@ -10,6 +10,14 @@ A readable delivery review tied to its files. Answer eight questions about purpo
 
 An early 0.1 prototype by KeshavaSon, informed by the [MiTrabajadorIA methodology](https://mitrabajadoria.es/metodologia). It does not require religious affiliation or score people.
 
+## Ethical foundation and present-tense care (draft only)
+
+The [ethical foundation](docs/ETHICAL-FOUNDATION.md) begins with **Ahiṃsā** (non-harm), calls for **Viveka** (contextual discernment), and requires **Satya** (truthful claims) *at every stage*. Human accountability, repair and historical Satya–Dharma–Karma commitments are not replaced. These are human review criteria, **not runtime guarantees of safety or ethical certification**.
+
+The [bounded reflective loop](docs/REFLECTIVE-LOOP.md) proposes a critical mirror, a domain teacher who demonstrates transferable improvements, and proportional meta-review; it is not implemented. [SATYA Commons](docs/FEDERATED-EXPANSION.md) proposes voluntary, federated adaptation between independently owned projects. The [minimum adoption contract](docs/ADOPTION-CONTRACT.md) requires a human owner, immutable pinned commit, local limitations and explicit acceptance; a link to a mutable draft branch is **not adoption**. [Presence without possession](docs/PRESENCE-WITHOUT-POSSESSION.md) proposes respectful, non-manipulative human-facing design, without ranking spirituality or claiming AI inner experience.
+
+Nothing here connects AJUTIA, MiTrabajadorIA, INFoBOT or third-party agents, grants permission, changes the `satya-review.v1` schema, or deploys automated reviewers. The linked proposals remain in an open draft pull request.
+
 ## Run locally
 
 Requires Node.js 22+. No package installation, account, key, model or server is needed. From this folder, point the commands at an existing delivery directory:

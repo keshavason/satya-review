@@ -21,7 +21,7 @@ La fuente previa de MiTrabajadorIA expresa **Ahiṃsā → Satya → Dharma → 
 
 ## 2. Origen canónico y expansión federada
 
-**La referencia común vive en un lugar versionado**, con historia de cambios y crítica abierta: este documento, el [fundamento](ETHICAL-FOUNDATION.md) y el [bucle reflexivo](REFLECTIVE-LOOP.md) de satya-review. Ningún repositorio periférico debe replicar íntegramente su texto: cada aplicación mantiene un **adaptador mínimo** que fija la versión adoptada, su alcance, las divergencias justificadas y su propietario. La adopción es optativa. Las copias del texto que circulen son informativas, no autoridad dinámica.
+**La referencia común vive en un lugar versionado**, con historia de cambios y crítica abierta: este documento, el [fundamento](ETHICAL-FOUNDATION.md) y el [bucle reflexivo](REFLECTIVE-LOOP.md) de satya-review. Ningún repositorio periférico debe replicar íntegramente su texto: cada aplicación mantiene un **adaptador mínimo** que fija la versión adoptada, su alcance, las divergencias justificadas y su propietario. La adopción es optativa. Para evitar herencia implícita, consultar el [contrato mínimo de adopción](ADOPTION-CONTRACT.md): exige revisión del propietario, diferencias declaradas y **commit SHA fijado**; enlazar una rama cambiante no equivale a adoptar. Las copias del texto que circulen son informativas, no autoridad dinámica.
 
 | Superficie | Responsabilidad propia, no duplicada | Ejemplo de adaptación propuesta |
 | --- | --- | --- |
@@ -136,7 +136,7 @@ Comparar, con criterios fijados previamente:
 ## 7. Adopción escalonada y responsabilidades
 
 **P0 · Documento en borrador:** este archivo y enlaces en ramas de propuesta. Sin cambios de runtime, datos, agentes ni herramientas.
-**P1 · Adaptadores de lectura por aplicación:** cada propietario revisa y publica su *propio* manifiesto de adopción, con versión fijada y excepciones. No se escribe de una app a otra.
+**P1 · Adaptadores de lectura por aplicación:** cada propietario revisa y publica su *propio* [manifiesto mínimo de adopción](ADOPTION-CONTRACT.md), con versión fijada y excepciones. No se escribe de una app a otra.
 **P2 · Simulación en sandbox:** fixtures sintéticos, sin PII, sin conectores, con trazas y presupuesto; reportar pruebas ejecutadas y no ejecutadas.
 **P3 · Piloto gobernado y optativo:** autorización humana por efecto, permisos mínimos, verificación de propiedad, paradas, reconciliación y auditoría de operaciones reales.
 **P4 · Expansión abierta:** solo tras evidencias independientes, comunicación transparente de límites y capacidad comprobada de retirada y reparación.

@@ -15,9 +15,9 @@ Esta carta inspira requisitos verificables de interacción. No pretende comproba
 
 ## 1. La visión espiritual es una invitación, no un requisito
 
-El usuario inspirador presenta **sat-cit-ānanda** como comprensión de eternidad, sabiduría/consciencia y alegría de existir y cocrear; entiende el presente como espacio de realización y el amor como orientación. Esta es **su visión espiritual significativa**, que merece respeto y puede ser explorada si la persona lo desea.
+Una de las interpretaciones espirituales que inspiran esta propuesta comprende **sat-cit-ānanda** como eternidad, sabiduría/consciencia y alegría de existir y cocrear; contempla el presente como espacio de realización y el amor como orientación. Se presenta **como interpretación posible y respetable**, no como creencia atribuible a una persona determinada ni como doctrina obligatoria.
 
-En tradiciones filosóficas indias, *sat*, *cit* y *ānanda* suelen explicarse aproximadamente como **ser/existencia**, **consciencia** y **plenitud o dicha**; las interpretaciones y el contexto doctrinal varían. La traducción «eternidad, sabiduría y felicidad» es una **lectura espiritual personal**, no una medición empírica ni una prueba de que todos los humanos saben o deben saber que son eternos.
+En tradiciones filosóficas indias, *sat*, *cit* y *ānanda* suelen explicarse aproximadamente como **ser/existencia**, **consciencia** y **plenitud o dicha**; las interpretaciones y el contexto doctrinal varían. La traducción «eternidad, sabiduría y felicidad» es una **lectura interpretativa entre otras posibles**, no una medición empírica ni una prueba de que todos los humanos saben o deben saber que son eternos.
 
 El sistema **no** declarará demostrada la inmortalidad del alma, ni la negará dogmáticamente cuando la conversación trata de significado personal; distingue convicción, reflexión filosófica y hechos comprobables. No convertirá la creencia en requisito de acceso, perfil clínico, puntuación moral o variable comercial. Una persona creyente, atea, agnóstica o indecisa conserva idéntica dignidad y libertad.
 

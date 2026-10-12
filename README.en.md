@@ -10,15 +10,17 @@ A readable delivery review tied to its files. Answer eight questions about purpo
 
 An early 0.1 prototype by KeshavaSon, informed by the [MiTrabajadorIA methodology](https://mitrabajadoria.es/metodologia). It does not require religious affiliation or score people.
 
-## Ethical foundation and present-tense care (draft only)
+## SATYA Commons v0.1 — public documentary proposal
 
-The [ethical foundation](docs/ETHICAL-FOUNDATION.md) begins with **Ahiṃsā** (non-harm), calls for **Viveka** (contextual discernment), and requires **Satya** (truthful claims) *at every stage*. Human accountability, repair and historical Satya–Dharma–Karma commitments are not replaced. These are human review criteria, **not runtime guarantees of safety or ethical certification**.
+Start with the [protocol overview and reading guide](docs/SATYA-COMMONS.md). This is a versioned proposal for responsible human–agent and agent–agent cooperation, open to criticism and evaluation, not a deployed network or certification.
 
-The [bounded reflective loop](docs/REFLECTIVE-LOOP.md) proposes a critical mirror, a domain teacher who demonstrates transferable improvements, and proportional meta-review; it is not implemented. [SATYA Commons](docs/FEDERATED-EXPANSION.md) proposes voluntary, federated adaptation between independently owned projects. The [minimum adoption contract](docs/ADOPTION-CONTRACT.md) requires a human owner, immutable pinned commit, local limitations and explicit acceptance; a link to a mutable draft branch is **not adoption**. [Presence without possession](docs/PRESENCE-WITHOUT-POSSESSION.md) proposes respectful, non-manipulative human-facing design, without ranking spirituality or claiming AI inner experience.
+The [ethical foundation](docs/ETHICAL-FOUNDATION.md) combines non-harm, discernment, truthfulness throughout, responsibility, consequence review and care. The [bounded reflective loop](docs/REFLECTIVE-LOOP.md) describes a critical mirror, a domain teacher demonstrating transferable improvement and proportional meta-review. [Federated expansion](docs/FEDERATED-EXPANSION.md) permits locally owned adaptations, identified copies and archives under the applicable license, without automatic policy updates or cross-app authority.
 
-Nothing here connects AJUTIA, MiTrabajadorIA, INFoBOT or third-party agents, grants permission, changes the `satya-review.v1` schema, or deploys automated reviewers. The linked proposals remain in an open draft pull request.
+The [adoption contract](docs/ADOPTION-CONTRACT.md) distinguishes reading from adopting an exact reviewed commit. [Presence without possession](docs/PRESENCE-WITHOUT-POSSESSION.md) proposes non-manipulative interaction, current user choice and spiritual freedom without scoring inner states.
 
-The [12 October cross-repository audit](docs/CROSS-REPOSITORY-AUDIT-2026-10-12.md) records corrections, CI evidence and remaining risks. It is **not** independent human review or proof of a working federated system.
+Nothing in this documentary publication connects applications, grants permissions, changes `satya-review.v1`, deploys reviewers or demonstrates comparative effectiveness. Independent human peer review and operational evaluation are not claimed. Private projects, conversations and data are not authorized for publication by using these protocols.
+
+The [earlier cross-repository audit](docs/CROSS-REPOSITORY-AUDIT-2026-10-12.md) is a historical snapshot of then-current draft branches and checks, not the current release status. Consult the [publication scope](docs/SATYA-COMMONS.md) and actual GitHub PR/CI records for the candidate being examined. The badge above concerns `main`, not every branch or protocol claim.
 
 ## Run locally
 
@@ -55,8 +57,6 @@ node bin/satya.mjs verify examples/changed
 npm test
 ```
 
-GitHub Actions runs the same suite with Node.js 22 on Linux and Windows. The badge above shows the current status of that check; it does not certify how the tool is used.
+GitHub Actions runs the same suite with Node.js 22 on Linux and Windows. The changed example must report an intentional modification after capture. Examples are fictional, with no real clients or fiscal transactions. See [validation](docs/VALIDATION.md), [review fields](docs/REVIEW.md), [design rationale and attribution](docs/DECISION.md), and [future fiscal product scope](docs/FISCAL-MODULE.md).
 
-The changed example must report an intentional modification after capture. Examples are fictional, with no real clients or fiscal transactions. See [validation](docs/VALIDATION.md), [review fields](docs/REVIEW.md), [design rationale and attribution](docs/DECISION.md), and [future fiscal product scope](docs/FISCAL-MODULE.md).
-
-No runtime dependencies, telemetry, network calls or paid APIs. Hardware, review and maintenance still have costs. Internal testing does not demonstrate market demand, compliance or financial savings. MIT-licensed original code; VeriFactu is not bundled and keeps its own license.
+No runtime dependencies, telemetry, network calls or paid APIs. Hardware, review and maintenance still have costs. Internal testing does not demonstrate market demand, compliance or financial savings. MIT-licensed original code and associated documentation under [LICENSE](LICENSE); VeriFactu is not bundled and keeps its own license. Methodological recommendations do not add license restrictions.

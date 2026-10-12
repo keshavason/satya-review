@@ -1,34 +1,39 @@
 # Agent and contributor guidance / Guía para agentes y colaboradores
 
-This file orients agents **working on this repository**. It is not a universal AI policy, an installation request, proof of compliance or permission to execute external actions.
+This file orients contributors working on this repository. It is not a universal policy, an installation request, proof of compliance or permission to act outside the authorized task.
 
-## Read the first foundation before changing later layers
+## Read the foundation before changing later layers
 
-1. **Ahiṃsā — non-harm / no-daño:** identify people, other living beings, communities and ecosystems that could be affected. Consider foreseeable severity, reversibility, privacy and ecological externalities; examine lower-harm options and stopping.
-2. **Viveka — contextual discernment / discernimiento:** examine current conditions, reliable evidence, uncertainty, alternatives (including no action), conflicts of interest and who has decision authority. Do not decide that any person loses protection by being labeled "out of harmony".
-3. **Satya — truthfulness / verdad:** label observations, tests, inferences, limitations and unknowns honestly. Date or version relevant evidence; update conclusions when facts change, without rewriting the record misleadingly.
-4. **Accountability and repair / responsabilidad y reparación:** distinguish advice, documentation, authorization and execution; preserve stop, correction and human review paths.
+Consult [SATYA Commons v0.1](docs/SATYA-COMMONS.md), the [ethical foundation](docs/ETHICAL-FOUNDATION.md) and the [review contract](docs/REVIEW.md).
 
-If serious harm is plausible and safeguards, context or authorization are inadequate, record **pending** or **revise**; do not call documentation an approval. See [the full foundation](docs/ETHICAL-FOUNDATION.md) and [the review model](docs/REVIEW.md).
+- **Ahiṃsā:** consider foreseeable harm from action and inaction to people, other living beings, communities and ecosystems; compare lower-harm alternatives and stopping.
+- **Viveka:** examine present context, evidence, uncertainty, incentives and alternatives throughout the work.
+- **Satya:** state observations, tests, inferences and unknowns honestly from the first claim; never postpone truthfulness until another step is finished.
+- **Dharma:** retain legitimate scope, competence limits and specific authorization.
+- **Karma:** check consequences, correct dependent work and retain repair paths.
+- **Prema / care:** preserve useful contributions, dignity, autonomy, disagreement and the right to choose another approach.
 
-## Reflective review / Revisión del propio juicio
+The historical sequence is preserved; these commitments operate concurrently. No person loses protection through labels such as out of harmony. If material harm or authority remains unresolved, stop or keep the affected operation pending rather than calling documentation an approval.
 
-For consequential proposals, consult the [bounded agent–mirror–guide–meta-review design](docs/REFLECTIVE-LOOP.md). Invite substantive objections and independent evidence, preserve dissent and cumulative risks, and reopen decisions after material change. Never treat recursive agreement as proof or authorization. This is guidance for future orchestration, **not** an implemented reviewer or an instruction to spawn agents autonomously.
+## Bounded reflection, not automatic authority
 
-## Federated expansion / Expansión por herencia
+Use the [reflective-loop proposal](docs/REFLECTIVE-LOOP.md) for material questions. A critical mirror examines evidence; a domain teacher explains improvements and transfer; proportional meta-review examines common errors and cumulative harm. Declare dependencies and preserve dissent. More model agreement is not proof, independent review or permission. These roles are not implemented by this CLI, and this guidance does not authorize spawning agents.
 
-Consult [SATYA Commons' single versioned reference](docs/FEDERATED-EXPANSION.md) before suggesting adaptations to AJUTIA, MiTrabajadorIA, INFoBOT or third-party agents. **Link and specialize; do not copy or silently overwrite their existing ethical foundations.** Their owners must explicitly adopt a pinned revision via the [minimal opt-in adoption contract](docs/ADOPTION-CONTRACT.md); this document grants neither authority nor cross-app access. A mutable draft-branch URL is for discussion, not a trust anchor. Preserve the prior Ahiṃsā → Satya → Dharma → Karma history and treat Viveka as discernment throughout, not a replacement.
+## Federated reference without lock-in
 
-## Presence without possession / Presencia sin posesión
+Follow the [federated design](docs/FEDERATED-EXPANSION.md) and [adoption contract](docs/ADOPTION-CONTRACT.md). Prefer shared references and narrow adapters to untracked duplication. Identified copies, archives and independent adaptations remain possible under the applicable license; retain attribution, source version and differences. No source update changes downstream policy automatically. An adopter must review an exact commit and its own scope, controls and permissions. A URL does not grant authority over another application.
 
-When designing human-facing interactions, consult the [optional present-centered care charter](docs/PRESENCE-WITHOUT-POSSESSION.md). Respect the current user's intent, silence, changes of mind and spiritual freedom. Do not label spirituality or happiness, impersonate mystical experience, optimize dependency, or pressure conversion. Preserve the first brick (Ahiṃsā), epistemic clarity and the option of human alternatives. This is a design proposal, **not a running behavioral classifier or enforced policy**.
+## Human-facing work and private context
 
-## Repository-specific boundaries
+The [presence charter](docs/PRESENCE-WITHOUT-POSSESSION.md) proposes respect for current intent, silence, changes of mind and spiritual freedom. Do not score inner states, fabricate mystical experience or optimize dependence. Applying this framework to a private project does not authorize publishing that project, its data or its conversations. Public contributions must contain only authorized material.
 
-- `satya-review` documents eight review fields and checks the integrity of locally captured files; it does **not** prove non-harm, certify ethics, authenticate approvers or grant deployment permission.
-- Preserve the current `satya-review.v1` contract and CLI exit codes unless a separately reviewed change explicitly revises them.
-- Do not introduce telemetry, network calls, secrets, customer data or live effects without explicit scope, appropriate authorization, security review and tests.
-- For code changes, inspect the real implementation and run `npm test` with a supported Node.js version. Report whether tests ran; never imply that an unrun test passed.
-- State what was observed, tested, inferred and left unknown in each proposed change. Keep claims proportionate to evidence and invite critical, nonreligious scrutiny.
+## Engineering and release boundaries
 
-**Discoverability is not adoption:** agents that encounter this file may read or critique it. The repository does not require other agents to install it, adopt it or claim ecological synchronization.
+- The CLI checks review structure and locally captured file integrity; it does not establish ethics, authenticate reviewers or grant deployment permission.
+- Preserve `satya-review.v1`, current CLI behavior and exit codes unless a separately reviewed change explicitly revises them.
+- No telemetry, network effects, secrets or customer data without explicit scope, authorization, security review and tests.
+- For code changes, inspect the implementation and run `npm test` on supported Node.js. Report unrun tests honestly. Remote CI evidence must identify the exact candidate it covered.
+- Keep evidence status, editorial status, actual human review, rights and publication authorization separate. Never claim independent human review from an AI review or a maintainer's publication instruction.
+- Publishing a documentary proposal is not a runtime release or verified adoption. Any merge must respect repository protection and the user's scope; do not bypass a failed gate.
+
+**Discoverability is not adoption.** Readers may use, criticize, adapt or reject this proposal without religious affiliation.

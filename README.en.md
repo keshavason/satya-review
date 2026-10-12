@@ -10,6 +10,18 @@ A readable delivery review tied to its files. Answer eight questions about purpo
 
 An early 0.1 prototype by KeshavaSon, informed by the [MiTrabajadorIA methodology](https://mitrabajadoria.es/metodologia). It does not require religious affiliation or score people.
 
+## SATYA Commons v0.1 — public documentary proposal
+
+Start with the [protocol overview and reading guide](docs/SATYA-COMMONS.md). This is a versioned proposal for responsible human–agent and agent–agent cooperation, open to criticism and evaluation, not a deployed network or certification.
+
+The [ethical foundation](docs/ETHICAL-FOUNDATION.md) combines non-harm, discernment, truthfulness throughout, responsibility, consequence review and care. The [bounded reflective loop](docs/REFLECTIVE-LOOP.md) describes a critical mirror, a domain teacher demonstrating transferable improvement and proportional meta-review. [Federated expansion](docs/FEDERATED-EXPANSION.md) permits locally owned adaptations, identified copies and archives under the applicable license, without automatic policy updates or cross-app authority.
+
+The [adoption contract](docs/ADOPTION-CONTRACT.md) distinguishes reading from adopting an exact reviewed commit. [Presence without possession](docs/PRESENCE-WITHOUT-POSSESSION.md) proposes non-manipulative interaction, current user choice and spiritual freedom without scoring inner states.
+
+Nothing in this documentary publication connects applications, grants permissions, changes `satya-review.v1`, deploys reviewers or demonstrates comparative effectiveness. Independent human peer review and operational evaluation are not claimed. Private projects, conversations and data are not authorized for publication by using these protocols.
+
+The [earlier cross-repository audit](docs/CROSS-REPOSITORY-AUDIT-2026-10-12.md) is a historical snapshot of then-current draft branches and checks, not the current release status. Consult the [publication scope](docs/SATYA-COMMONS.md) and actual GitHub PR/CI records for the candidate being examined. The badge above concerns `main`, not every branch or protocol claim.
+
 ## Run locally
 
 Requires Node.js 22+. No package installation, account, key, model or server is needed. From this folder, point the commands at an existing delivery directory:
@@ -45,8 +57,6 @@ node bin/satya.mjs verify examples/changed
 npm test
 ```
 
-GitHub Actions runs the same suite with Node.js 22 on Linux and Windows. The badge above shows the current status of that check; it does not certify how the tool is used.
+GitHub Actions runs the same suite with Node.js 22 on Linux and Windows. The changed example must report an intentional modification after capture. Examples are fictional, with no real clients or fiscal transactions. See [validation](docs/VALIDATION.md), [review fields](docs/REVIEW.md), [design rationale and attribution](docs/DECISION.md), and [future fiscal product scope](docs/FISCAL-MODULE.md).
 
-The changed example must report an intentional modification after capture. Examples are fictional, with no real clients or fiscal transactions. See [validation](docs/VALIDATION.md), [review fields](docs/REVIEW.md), [design rationale and attribution](docs/DECISION.md), and [future fiscal product scope](docs/FISCAL-MODULE.md).
-
-No runtime dependencies, telemetry, network calls or paid APIs. Hardware, review and maintenance still have costs. Internal testing does not demonstrate market demand, compliance or financial savings. MIT-licensed original code; VeriFactu is not bundled and keeps its own license.
+No runtime dependencies, telemetry, network calls or paid APIs. Hardware, review and maintenance still have costs. Internal testing does not demonstrate market demand, compliance or financial savings. MIT-licensed original code and associated documentation under [LICENSE](LICENSE); VeriFactu is not bundled and keeps its own license. Methodological recommendations do not add license restrictions.

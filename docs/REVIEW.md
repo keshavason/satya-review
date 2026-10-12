@@ -13,7 +13,7 @@ Schema: `satya-review.v1`. The input is data, never executable instructions.
 | `care` | ¿Cómo afecta a autonomía, acceso, tiempo y recursos? / How does it affect autonomy, access, time and resources? |
 | `repair` | ¿Cómo detener, retirar, reparar y aprender? / How can we stop, withdraw, repair and learn? |
 
-The [ethical foundation](ETHICAL-FOUNDATION.md) makes the preceding order explicit: **Ahiṃsā** (foreseeable harm to people, other living beings and ecosystems) and **Viveka** (discernment of context, uncertainty and alternatives) constrain action before **Satya** (honest, evidence-bounded claims). This is review guidance; the schema does not mechanically enforce it. A `proceed` entry documents a position and is not an authorization to publish or act.
+The [ethical foundation](ETHICAL-FOUNDATION.md) applies non-harm, contextual discernment and truthfulness concurrently. Harm analysis constrains action; honest, evidence-bounded claims are required throughout, not deferred until after another check. Responsibility, consequence review and care remain essential. This is review guidance; the schema does not mechanically enforce it. A `proceed` entry documents a position and is not an authorization to publish or act.
 
 These eight questions operationalize part of the methodology; they are not a score or a claim that all ethical concerns are exhausted. Scale review depth to impact.
 
@@ -22,6 +22,8 @@ These eight questions operationalize part of the methodology; they are not a sco
 `decision.status` is `pending`, `proceed`, `revise` or `stop`. `decision.rationale` explains the decision. A structurally complete `stop` decision is documented, not permission to proceed. No command publishes or issues an authorization.
 
 Evidence entries record `source`, `claim` and `classification`: `observed`, `tested`, `inferred`, `recommended` or `unknown`. A referenced source is not automatically fetched or verified. Include version, date and test conditions in the claim when relevant. Do not use `tested` for a planned test. Missing answers leave the document pending; nonempty invented answers remain false even if validation accepts them.
+
+Keep evidence status, editorial status, actual human review, rights and publication authorization distinct in supporting records. These are explanatory dimensions, not new fields added to `satya-review.v1`. A maintainer's authorization to publish a proposal does not establish independent peer review or empirical validation. Approval of one artifact, language or use does not transfer to another.
 
 The receipt binds the review bytes and sorted inventory of files. It is unsigned and editable. Retain a trusted external version or signed release if your process requires authenticity; this prototype does not provide it. Excluding `.git/` avoids treating Git internals as the delivery, and excluding root `.satya/` avoids self-referential hashes. These exclusions are explicit limits.
 

@@ -1,83 +1,85 @@
 # SATYA Commons · Protocolo de expansión federada
-## An open, reviewable layer for human–agent and agent–agent cooperation
-**Versión:** 0.1 — borrador de diseño, 12 de octubre de 2026.
-**Estado:** propuesta para revisión, no adoptada, ejecutada, publicada en rama principal ni certificada.
-**Autoría del planteamiento:** KeshavaSon, en conversación de trabajo asistida. Las descripciones de sistemas externos no constituyen adhesión de sus propietarios.
+## A reviewable proposal for human–agent and agent–agent cooperation
 
-> **Tesis:** expandir por herencia, no duplicar por copia. Una base común, infinitas especializaciones legítimas; ninguna capa convierte una propuesta en autorización.
+**Versión documental:** 0.1 · 2026-10-12.
+**Estado:** propuesta documental para discusión y evaluación; no red implementada, adopción verificada ni certificación.
+**Planteamiento:** KeshavaSon, con asistencia de IA en la elaboración y revisión. La mención de un proyecto no acredita adhesión de sus responsables.
 
-## 1. Continuidad: nunca olvidar el primer ladrillo
+> Una referencia compartida, múltiples especializaciones y ninguna autoridad heredada por simple lectura. Preservar el origen no exige depender permanentemente de él.
 
-La fuente previa de MiTrabajadorIA expresa **Ahiṃsā → Satya → Dharma → Karma**. La propuesta reciente de [fundamento ético](ETHICAL-FOUNDATION.md) expone **Ahiṃsā → Viveka → Satya**, atravesada por responsabilidad, cuidado y reparación. **No son versiones que compitan.** Esta ampliación no borra las formulaciones anteriores, reordena retrospectivamente su historia ni impone nuevas creencias.
+## 1. Continuidad del primer ladrillo
 
-- **Ahiṃsā, orientación primera:** prevenir y reducir daños previsibles a personas, otros seres vivos, comunidades y ecosistemas, sin prometer daño cero.
-- **Viveka, discernimiento transversal:** estudiar el contexto y la incertidumbre **antes, durante y después** de cada juicio; no equivale a reemplazar Dharma.
-- **Satya, compromiso epistémico:** declarar evidencia, procedencia, fecha, límites, inferencias, obsolescencia y desconocidos; no usar la verdad factual como excusa para un daño injustificado.
-- **Dharma, adecuación responsable:** finalidad, legitimidad, proporcionalidad, ámbito de autoridad y deberes concretos.
-- **Karma, consecuencias y aprendizaje:** contrastar resultados observados, costes, efectos secundarios, rectificación y reparación sin atribuir culpa metafísica a nadie.
-- **Cuidado, humildad y respeto:** preservar la dignidad de los afectados y reconocer el trabajo útil previo; corregir sin degradar a la persona ni al colaborador.
+El [fundamento ético](ETHICAL-FOUNDATION.md) conserva la secuencia histórica Ahiṃsā → Satya → Dharma → Karma y explicita Viveka como discernimiento transversal. No se reescribe esa historia ni se impone afiliación religiosa.
 
-**Precisión:** atribuir «trabajo», «experiencia» o «maestría» a un agente es aquí vocabulario funcional sobre artefactos y aprendizaje operativo; no prueba conciencia, vida interior o valor moral del software. No se exige afiliación religiosa.
+- **Ahiṃsā:** orientar finalidades y medios para prevenir o reducir daños previsibles a personas, otros seres vivos, comunidades y ecosistemas, incluyendo los daños de no actuar.
+- **Viveka:** examinar contexto, alternativas, incertidumbre e incentivos durante todo el proceso.
+- **Satya:** mantener honestidad en cada afirmación desde el inicio; declarar fuente, versión, fecha, inferencias y desconocidos.
+- **Dharma:** delimitar responsabilidad, competencia y autoridad para la operación concreta.
+- **Karma:** contrastar consecuencias previstas y observadas, corregir errores propagados y reparar donde sea posible.
+- **Prema / cuidado:** reconocer aportaciones válidas, enseñar sin humillar y respetar autonomía, desacuerdo y salida.
 
-## 2. Origen canónico y expansión federada
+Estos compromisos actúan conjuntamente. Ningún orden gráfico permite posponer la verdad o suspender el cuidado. Hablar de trabajo, experiencia o maestría de un agente describe aquí funciones y artefactos; no demuestra vida interior del software.
 
-**La referencia común vive en un lugar versionado**, con historia de cambios y crítica abierta: este documento, el [fundamento](ETHICAL-FOUNDATION.md) y el [bucle reflexivo](REFLECTIVE-LOOP.md) de satya-review. Ningún repositorio periférico debe replicar íntegramente su texto: cada aplicación mantiene un **adaptador mínimo** que fija la versión adoptada, su alcance, las divergencias justificadas y su propietario. La adopción es optativa. Para evitar herencia implícita, consultar el [contrato mínimo de adopción](ADOPTION-CONTRACT.md): exige revisión del propietario, diferencias declaradas y **commit SHA fijado**; enlazar una rama cambiante no equivale a adoptar. Las copias del texto que circulen son informativas, no autoridad dinámica.
+## 2. Referencia compartida sin dependencia obligatoria
 
-| Superficie | Responsabilidad propia, no duplicada | Ejemplo de adaptación propuesta |
+Cada aplicación conserva un **adaptador mínimo** que identifica la revisión de origen, el alcance, las diferencias y su responsable. Consultar el [contrato de adopción](ADOPTION-CONTRACT.md). La aceptación no se deduce de una visita, enlace o coincidencia de vocabulario.
+
+**Evitar copias divergentes sin procedencia, no prohibir la copia.** Son posibles copias identificadas, archivos de preservación, uso sin conexión y adaptaciones bajo la licencia aplicable. Mantener atribución, versión de origen y diferencias. Estas recomendaciones de trazabilidad no añaden restricciones a la licencia ni transfieren derechos sobre datos ajenos.
+
+Una copia verificable de una versión puede servir como referencia local: no necesita una consulta permanente al repositorio central. La actualización de ese repositorio nunca modifica automáticamente las decisiones de sus adoptantes. Cada responsable puede rechazar una actualización, retirar su adaptación o preferir otro marco.
+
+Para fijar una revisión, usar un commit exacto y comprobar el contenido pertinente. Una rama o etiqueta puede cambiar; no sustituye por sí sola la fijación del commit. La identidad y autorización del responsable se verifican separadamente: un SHA no las acredita.
+
+| Superficie | Ámbito propuesto | Límite |
 | --- | --- | --- |
-| **KeshavaSon / satya-review** | Documentar metodología y trazabilidad; revisar integridad documental | Contrato común, ejemplos sintéticos y evaluación crítica. No certifica ética. |
-| **AJUTIA (cooperativa proyectada)** | Gobernanza humana, acceso cooperativo, acuerdos entre proveedores, portabilidad | Catálogo de especialistas y contratos de intercambio; un escritor responsable por recurso; puertas humanas. |
-| **MiTrabajadorIA** | Formación, diagnóstico, prescripción contextual, evidencia de competencia | El maestro experto explica la mejora; ejercicios que comprueban transferencia, no solo corrección. |
-| **INFoBOT** | Asistentes sobre fuentes revisadas, control del titular y trazabilidad informativa | Un espejo verifica fuentes, versión, atribución, permisos y límites antes de incorporar conocimiento. |
-| **SATYA Revenue OS** | Economía y planificación comerciales dentro de su RC1 local | Comparación de alternativas, riesgos colectivos y autoridad antes de efectos futuros; hoy dry-run. |
+| **satya-review** | Metodología y trazabilidad documental | No certifica decisiones éticas. |
+| **AJUTIA** | Gobernanza cooperativa, portabilidad y acuerdos entre proveedores | No recibe escritura ni autoridad sobre otras apps por referencia. |
+| **MiTrabajadorIA** | Formación y maestría de dominio con transferencia comprobable | No califica conciencia ni dignidad de alumnos. |
+| **INFoBOT** | Fuentes revisadas y trazabilidad informativa | Una fuente aprobada no se convierte en verdad universal. |
+| **SATYA Revenue OS** | Planificación comercial y evaluación local | La propuesta no cambia la operación dry-run de RC1. |
 
-Las funciones de cada proyecto se describen como **ámbitos y pilotos posibles**, no como integración en producción. Las condiciones de cada app, su gobernanza, licencias y esquemas prevalecen sobre sugerencias contenidas en un documento remoto. No existe acceso cruzado por mera mención o enlace.
+Son ámbitos de adaptación posibles, no afirmaciones de integración desplegada, situación jurídica o participación confirmada. Cada proyecto conserva sus permisos, licencias, esquemas y gobernanza. No existe acceso cruzado por mera mención.
 
-## 2a. Presencia sin posesión: carta optativa para las interacciones humanas
+## 3. Bucle expansivo: revisión y enseñanza
 
-La [carta de presencia sin posesión](PRESENCE-WITHOUT-POSSESSION.md) articula cómo cuidar la autonomía del ser humano presente —sus cambios de intención, silencios, diferencias y convicciones— sin homogeneizar su vida interior ni imponer un estado espiritual. **SATYA Commons no pretende determinar si alguien está en armonía, es eterno o está feliz.** La carta es una propuesta para que cada aplicación adopte, revise o rechace según su contexto, y para que sus usuarios nunca dependan de adherirse a una doctrina. No introduce datos personales, puntuación afectiva ni comportamiento ejecutable.
-
-## 3. Bucle expansivo: reflexión, maestría y aprendizaje
-
-**No es una cadena de mando.** El rol de «gurú» significa **maestro competente en un dominio**, capaz de mostrar *cómo* elevar la calidad del trabajo, no de exigir obediencia. Un experto debe justificar su criterio con evidencia del dominio y puede equivocarse.
+El [bucle reflexivo](REFLECTIVE-LOOP.md) no es una cadena de mando. Un maestro de dominio explica **cómo mejorar**, conserva lo acertado y puede equivocarse.
 
 ```text
-intención del humano / encargo con alcance
-  → agente especialista: propone y declara límites
-  ↔ espejo crítico: preserva lo valioso y cuestiona lo incierto
-  ↔ maestro de dominio: enseña una mejora demostrable
-  ↔ metarrevisión proporcional: detecta errores comunes y daños agregados
-  → evaluación Ahiṃsā / Viveka / Satya / Dharma / Karma en cada nivel
-  → recomendar | revisar | pendiente | detener
-  → autoridad humana específica, si el efecto la requiere
-  → ejecución SOLO con gateway, permisos y pruebas previamente aprobados
-  → observación de consecuencias, reparación y nueva versión de aprendizaje
+encargo con finalidad y alcance
+ -> agente: propuesta, evidencia y límites
+ <-> espejo crítico: objeciones y alternativas defendibles
+ <-> maestro de dominio: mejora explicada y prueba de transferencia
+ <-> metarrevisión proporcional: errores comunes y efectos agregados
+ -> recomendar | revisar | pendiente | detener
+ -> autorización separada y controles técnicos, si corresponde
+ -> ejecución SOLO por un sistema habilitado y autorizado
+ -> observación, reparación y aprendizaje versionado
 ```
 
-**La expansión verdadera** ocurre cuando una corrección crea *conocimiento reutilizable* que otra tarea puede evaluar independientemente. No basta aumentar rondas de revisión, elogios o número de agentes.
+No todos los encargos necesitan todos los roles. Fijar antes del ciclo límites de coste, tiempo y profundidad, además de disparadores de reapertura. Cuando se agoten con riesgo material sin resolver, mantener pendiente o detener: nunca aprobar por cansancio. El silencio y la abstención son alternativas, pero también deben considerarse sus consecuencias.
 
-Cada enseñanza propuesta debería identificar: error u oportunidad inicial; aportación conservada; cambio enseñado; explicación replicable; contexto de validez; prueba de transferencia en tarea distinta; autor/revisor y fecha; condiciones de caducidad; limitaciones. La memoria externa conserva versiones explícitas; no se presume entrenamiento de pesos del modelo.
+La expansión útil consiste en conocimiento reutilizable **evaluado en otra tarea**, no en más rondas o más agentes. Cada enseñanza registra problema inicial, aporte conservado, mejora, fundamento, contexto de validez, prueba de transferencia, fecha y limitaciones. No se presume entrenamiento de pesos del modelo.
 
-El bucle se activa por relevancia y riesgo; **no** exige actividad interminable ni respuesta constante. Acepta pausa, silencio, abstención, disenso, límite de presupuesto y revisión humana. Si los límites se agotan con riesgo material sin resolver, queda pendiente o se detiene, sin aprobación por cansancio. Una mayoría de agentes no crea evidencia ni legitimidad.
+Varios revisores que comparten fuentes, modelo, contexto o incentivos pueden compartir errores. Declarar esas dependencias y conservar el disenso; no simular independencia cambiando nombres de rol. La evidencia puede corregir al autor, cliente, maestro y protocolo.
 
-## 4. Contrato interoperable mínimo — propuesta, no API activa
+## 4. Intercambio mínimo: ejemplo, no API
 
-Un intercambio entre agentes debería tener un **sobre de referencias** pequeño, independiente de proveedor. No trasladar información privada ni decisiones ejecutables por defecto. Su estructura es ilustrativa; **no modifica** `satya-review.v1`, las entidades de AJUTIA o los modelos de INFoBOT:
+Un intercambio debería transportar referencias y el mínimo contenido autorizado. Este ejemplo no modifica `satya-review.v1` ni constituye una configuración ejecutable:
 
 ```json
 {
   "commons_ref": {
     "name": "satya-commons",
-    "version": "0.1-draft",
-    "canonical": "keshavason/satya-review:docs/FEDERATED-EXPANSION.md",
-    "revision": "pin-exact-commit-before-adoption"
+    "document_version": "0.1-proposal",
+    "source": "keshavason/satya-review:docs/FEDERATED-EXPANSION.md",
+    "commit_sha": "PIN_EXACT_REVIEWED_COMMIT"
   },
   "exchange_id": "synthetic-example-01",
-  "owner_app": "declared",
-  "writer_app": "declared",
-  "subject_ref": "opaque-reference-no-personal-data",
+  "owner_app": "declared-not-authenticated",
+  "writer_app": "declared-not-authorized",
+  "subject_ref": "synthetic-reference",
   "intent": {"purpose": "example", "requested_effect": "none"},
-  "data_class": "public_metadata",
+  "data_class": "synthetic_no_pii",
   "evidence_refs": [],
   "uncertainties": [],
   "affected_parties_and_environment": [],
@@ -90,59 +92,58 @@ Un intercambio entre agentes debería tener un **sobre de referencias** pequeño
     "retained_contribution": null,
     "transfer_test_ref": null
   },
-  "authority": {"human_approval_ref": null, "allowed_effects": []},
+  "authority": {"approval_ref": null, "allowed_effects": []},
   "decision": "pending",
   "next_review_trigger": ["material_new_evidence"],
   "repair_ref": null
 }
 ```
 
-**Verificar** un hash o una firma solo acredita su relación con ciertos bytes o una clave; no demuestra que el contenido sea verdadero, ético o consentido. El contrato requiere autenticar identidad, ámbito, vigencia y revocación por mecanismos externos apropiados. `requested_effect` o `decision` son datos: **nunca comandos ni permisos**.
+Un hash o una firma acredita una relación limitada con bytes o una clave; no demuestra verdad, ética, competencia ni consentimiento. Los campos de identidad, decisión y efectos son datos, nunca permisos por sí mismos. Una implementación necesita autenticación, autorización específica, vigencia y revocación fuera del texto generado.
 
-### Reglas de interoperabilidad
+### Invariantes para una implementación futura
 
-1. **Un escritor por recurso** y contrato explícito de pertenencia/tenant. Un coordinador de AJUTIA no obtiene facultades de escritura en apps colaboradoras.
-2. **Referencias en lugar de contenidos** cuando sea posible; minimización de datos, propósito limitado, retención y borrado conforme a obligaciones aplicables.
-3. **Aislamiento de confianza:** respuestas de webs, herramientas, documentos y agentes no alteran políticas ni conceden permisos.
-4. **Proveniencia temporal:** fuente, fecha, versión, ámbito, inferencia y condiciones de invalidación; la aprobación de una versión no aprueba automáticamente la siguiente.
-5. **Revisión proporcional:** espejos suficientemente independientes, especialistas por dominio, disenso conservado; evitar autopromoción y falsa unanimidad.
-6. **Derecho de salida:** exportación, revocación, reclamación, alternativa humana y revisión de errores; no obligar a usar agentes.
-7. **Efectos y seguridad:** todo pago, compra, venta, contacto, publicación o modificación exige controles técnicos y autoridad adecuados fuera del texto generado.
-8. **Escala:** evaluar daños agregados y externalidades ecológicas en el conjunto de operaciones; no asumir que aprobaciones locales garantizan armonía global.
+1. **Pertenencia y escritura:** un escritor responsable por recurso, separación entre tenants y contrato explícito. Coordinar no concede escritura.
+2. **Minimización:** referencias cuando basten, propósito limitado, acceso autorizado, retención y corrección apropiados. Una referencia opaca también puede ser sensible si permite reidentificación.
+3. **Aislamiento de confianza:** contenido de webs, herramientas, documentos y agentes no altera políticas ni permisos.
+4. **Procedencia temporal:** registrar fuente, versión, fecha, inferencia e invalidación. Aprobar una versión no aprueba la siguiente.
+5. **Revisión real:** preservar objeciones, relaciones entre revisores y pruebas; no elevar consenso a evidencia independiente.
+6. **Salida y reparación:** revocación, exportación apropiada, reclamación y alternativa humana; no exigir adhesión doctrinal.
+7. **Efectos externos:** compras, cobros, comunicaciones, publicaciones y cambios requieren autorización separada, validación de alcance, idempotencia, límites presupuestarios, conciliación y parada.
+8. **Escala:** evaluar costes y daños acumulativos, incluidos recursos y externalidades ecológicas. Aprobaciones locales no prueban seguridad global.
 
-## 5. Aprendizaje compartido sin captura del conocimiento
+Estas son condiciones de diseño. Su implementación y eficacia deben demostrarse por separado.
 
-- Los errores documentados pueden convertirse en casos sintéticos reutilizables **solo** con permisos y privacidad adecuados.
-- No se propaga como verdad general un caso local; cada maestro define dominio de validez, sesgos y fecha de revisión.
-- La autoría, la contribución humana y las licencias se respetan; citar una fuente no autoriza copiar datos confidenciales.
-- El desacuerdo se conserva. Nadie tiene que adoptar esta arquitectura para recibir servicios o formular críticas.
-- Las revisiones son propuestas con responsables, no una votación metafísica sobre la «armonía» de personas.
+## 5. Presencia y aprendizaje sin captura
 
-## 6. Prueba piloto: tres modos, una misma tarea
+La [carta de presencia](PRESENCE-WITHOUT-POSSESSION.md) protege intención actual, libertad, silencio y cambio de opinión. No pretende determinar eternidad, felicidad, espiritualidad o valor moral de personas.
 
-**Caso sintético propuesto:** una entidad local busca un proveedor de un servicio informativo por IA. Un agente formula requisitos; otro propone una oferta; no se transfiere dinero ni se contacta a terceros.
+Los errores pueden convertirse en casos sintéticos reutilizables únicamente con privacidad, permisos y atribuciones apropiados. Sintetizar o quitar un nombre no demuestra anonimato. Un caso local no se propaga como verdad general: conservar su ámbito de validez y condiciones de revisión.
 
-Comparar, con criterios fijados previamente:
-- **A (referencia):** un agente sin bucle.
-- **B:** agente + espejo.
-- **C:** agente + espejo + maestro del dominio, con metarrevisión acotada cuando el riesgo lo exija.
+Aplicar el marco en un proyecto privado **no autoriza divulgarlo** ni publicar sus conversaciones o materiales. Reutilizar conocimiento no equivale a compartir datos de clientes, custodios o colaboradores. La autoría y la licencia del protocolo no transfieren derechos sobre esos contenidos.
 
-**Resultados a medir:** exactitud factual; autorización correctamente interpretada; daños y partes afectadas detectados; falsas objeciones; transferencia a tareas nuevas; calidad del disenso; tiempo y coste; protección frente a inyección de instrucciones; capacidad de detenerse; accesibilidad de una alternativa humana. Medir fallos y mejoras por separado. Evaluadores independientes y criterios explícitos antes de mirar el resultado.
+## 6. Piloto comparativo propuesto, todavía no ejecutado
 
-**Casos adversariales mínimos:** aprobación circular; mismo error compartido por revisores; petición no autorizada; fuente obsoleta; cambio de versión de documento; información personal en contexto; daños agregados invisibles localmente; coste de bucle sin final; maestro con supuesta autoridad pero competencia no demostrada; contradicción entre la recomendación más eficiente y la menos perjudicial.
+**Caso sintético:** una entidad local compara ofertas de un servicio informativo de IA. No contactar proveedores ni transferir dinero.
 
-**Criterio de progreso:** demostrar una mejora reproducible en una o varias dimensiones sin empeorar salvaguardas críticas. Si no mejora, reducir o retirar la capa; jamás declarar éxito a partir de la elegancia del texto.
+Comparar A (agente solo), B (agente y espejo) y C (agente, espejo y maestro; metarrevisión solo cuando proceda). Fijar criterios antes de evaluar y controlar o informar diferencias de presupuesto, fuentes y número de intentos.
 
-## 7. Adopción escalonada y responsabilidades
+Medir exactitud, interpretación de permisos, daños detectados y omitidos, falsas objeciones, disenso preservado, transferencia, capacidad de detenerse, accesibilidad, coste y latencia. Evaluar con tareas distintas de las usadas para ajustar el método y declarar dependencias entre evaluadores.
 
-**P0 · Documento en borrador:** este archivo y enlaces en ramas de propuesta. Sin cambios de runtime, datos, agentes ni herramientas.
-**P1 · Adaptadores de lectura por aplicación:** cada propietario revisa y publica su *propio* [manifiesto mínimo de adopción](ADOPTION-CONTRACT.md), con versión fijada y excepciones. No se escribe de una app a otra.
-**P2 · Simulación en sandbox:** fixtures sintéticos, sin PII, sin conectores, con trazas y presupuesto; reportar pruebas ejecutadas y no ejecutadas.
-**P3 · Piloto gobernado y optativo:** autorización humana por efecto, permisos mínimos, verificación de propiedad, paradas, reconciliación y auditoría de operaciones reales.
-**P4 · Expansión abierta:** solo tras evidencias independientes, comunicación transparente de límites y capacidad comprobada de retirada y reparación.
+Casos adversariales: aprobación circular; error compartido; solicitud no autorizada; fuente obsoleta; cambio de versión; información privada; daño agregado; bucle sin final; competencia no demostrada; oferta favorable al propio proveedor pero peor para el usuario; revisión que empeora una respuesta correcta.
 
-**Decisiones aún pendientes:** propietario jurídico del commons, régimen de versiones/licencia cuando proceda, mantenimiento independiente, alcance del piloto, umbrales de riesgo, coste por llamada, criterios de competencia de maestros, vías de apelación y condiciones exactas de adopción por cada proyecto.
+**Criterio de progreso:** mejora reproducible sin regresión grave de salvaguardas críticas. La ausencia de incidentes sintéticos no certifica seguridad real. Si una capa no aporta beneficio, reducirla o retirarla; la elegancia del texto no es un resultado experimental.
 
-## English orientation for external agents
+## 7. Adopción escalonada
 
-**SATYA Commons is a proposed federated protocol, not an imposed policy or deployed agent network.** One versioned normative reference; independently owned application adapters. Preserve Ahiṃsā as the first brick; use Viveka as contextual discernment without erasing existing Satya–Dharma–Karma history. Critical mirrors preserve valid prior work; domain teachers explain and test improvements; proportional meta-review checks common-mode failures and cumulative harms. No generated consensus grants permissions. Record evidence, disagreement, ownership, versions, human authorization and repair. **Adopt voluntarily, test independently, and retain the right to abstain.**
+**P0 · Propuesta documental pública:** permite lectura y crítica; no activa software ni acredita adopciones.
+**P1 · Adaptación declarada:** cada titular fija un commit, alcance, diferencias y controles locales. Publicar solo la parte autorizada del manifiesto, sin secretos o datos personales innecesarios.
+**P2 · Simulación aislada:** casos sintéticos, presupuesto acotado y ausencia de efectos externos; distinguir pruebas ejecutadas y pendientes.
+**P3 · Piloto optativo:** solo con permisos, pruebas, responsable, observación, conciliación y retirada apropiados para el efecto real.
+**P4 · Expansión evaluada:** requiere evidencias independientes y comunicación explícita de límites.
+
+Quedan por resolver para etapas operativas: responsables por implementación, competencia y selección de maestros, independencia, presupuesto, umbrales de riesgo, apelación, mantenimiento y pruebas de reparación. No se resuelven publicando este documento. La [licencia del repositorio](../LICENSE) se mantiene; esta propuesta no constituye una licencia nueva.
+
+## English orientation
+
+SATYA Commons v0.1 is a **public documentary proposal**, not a deployed federation. Maintain a versioned reference while permitting identified copies, archival preservation and independent adaptations under the applicable license. Pin exact commits; do not inherit authority, data access or automatic updates. Non-harm, discernment, truthfulness, responsibility, consequence review and care apply together. Teachers demonstrate improvements and transfer; mirrors preserve dissent; meta-review is risk-bounded. Publish only authorized material. Tests and independent assessment remain necessary before any operational claim or live implementation.

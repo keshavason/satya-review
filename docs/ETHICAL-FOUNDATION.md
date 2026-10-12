@@ -1,45 +1,53 @@
 # Ethical foundation / Fundamento ético
 
-This document makes explicit the ethical foundation assumed by **satya-review** and by downstream work that chooses to build on it, including agent-orchestration protocols. It is a statement of intent and review guidance, **not an executable guardrail, proof of safety, ethical certification, or substitute for affected people's judgment**. Existing `satya-review.v1` fields and exit codes remain unchanged.
+This document makes explicit the ethical foundation proposed by **satya-review** and available for voluntary downstream adaptation. It is review and design guidance, **not an executable guardrail, proof of safety, ethical certification, or substitute for affected people's judgment**. Existing `satya-review.v1` fields and exit codes remain unchanged.
 
-## Español — precedencia sin olvidar los ladrillos anteriores
+## Español — el primer ladrillo atraviesa todas las capas
 
-**Ahiṃsā → Viveka → Satya → responsabilidad y reparación.**
+**Ahiṃsā orienta la finalidad y limita los medios. Viveka discierne el contexto. Satya obliga a la honestidad en cada afirmación. Dharma delimita responsabilidades y autoridad. Karma exige observar consecuencias y corregir. Prema inspira cuidado sin convertir al otro en instrumento.**
 
-1. **Ahiṃsā (no causar daño):** antes de optimizar, convencer, publicar o ejecutar, identificar a quienes podrían sufrir efectos, incluidos seres humanos, otros seres vivos, comunidades y ecosistemas. Evitar daños previsibles, reducir los residuales y abstenerse cuando un riesgo grave no esté suficientemente acotado. El impacto ambiental debe examinarse con datos pertinentes, no presumirse por retórica de «armonía planetaria».
-2. **Viveka (discernimiento):** comprender el presente concreto, las fuentes, el contexto, los incentivos, la incertidumbre y las consecuencias indirectas. Examinar alternativas, incluida la opción de no actuar. No convertir un juicio parcial sobre «armonía» o «desintonía» en permiso para desproteger a una persona: la dignidad no depende de esa clasificación. Si hay que detener un daño, escoger medios proporcionados y lo menos perjudiciales posible.
-3. **Satya (verdad y honestidad):** distinguir lo observado, probado, inferido, recomendado y desconocido. Una afirmación válida en unas condiciones puede necesitar actualización cuando esas condiciones cambian; no alterar evidencias ni presentar la revisión contextual como licencia para sostener contradicciones sin pruebas.
-4. **Responsabilidad, autorización y reparación:** ninguna conclusión autoriza por sí misma un efecto externo. Documentar quién puede decidir, qué decisión queda pendiente, cómo detener o revertir daños y cómo aprender de los errores.
+Estos compromisos actúan conjuntamente. La secuencia histórica Ahiṃsā → Satya → Dharma → Karma y la explicitación posterior de Viveka no constituyen permisos sucesivos para suspender la verdad, el cuidado o la responsabilidad.
 
-**Aclaración:** esta precedencia ordena el discernimiento *de una decisión*, no aplaza la obligación de honestidad: Satya rige cada afirmación desde el inicio, igual que Ahiṃsā rige cada iteración. Viveka es transversal y no sustituye Dharma ni Karma en los proyectos que ya los emplean.
+1. **Ahiṃsā (no daño):** antes de optimizar, convencer, publicar o ejecutar, identificar a quienes podrían sufrir efectos: personas, otros seres vivos, comunidades y ecosistemas. Examinar daños de actuar y de no actuar, alternativas menos perjudiciales, gravedad, reversibilidad y riesgos residuales. No prometer daño cero ni presumir sostenibilidad sin datos.
+2. **Viveka (discernimiento):** comprender condiciones actuales, fuentes, incentivos, incertidumbre y consecuencias indirectas. No convertir una etiqueta de «armonía» o «desintonía» en permiso para desproteger a alguien. La intervención protectora debe ser proporcionada.
+3. **Satya (honestidad):** distinguir lo observado, probado, inferido, recomendado y desconocido desde la primera afirmación. Actualizar conclusiones ante nueva evidencia sin alterar engañosamente el historial. Ni una intención protectora ni una preferencia doctrinal justifican fabricar evidencia.
+4. **Dharma (responsabilidad):** precisar finalidad, función, límites de competencia y autoridad para cada efecto. Ninguna opinión, consenso entre modelos o documento autoriza por sí mismo una acción externa.
+5. **Karma (consecuencias):** contrastar lo previsto con lo observado, detectar errores propagados, detener daños y reparar donde sea posible. No atribuir culpa metafísica a personas afectadas.
+6. **Prema (cuidado y desapego):** reconocer aportaciones válidas, enseñar sin humillar y corregir sin inducir dependencia. Admitir que otra propuesta o evidencia supere la propia; el desapego no elimina deberes de mantenimiento o reparación.
 
-**Regla de precedencia:** si una propuesta parece eficaz o factual pero amenaza con un daño grave e injustificado, no basta invocar Satya o una métrica de rendimiento para seguir. Si falta evidencia para discernir el impacto, el resultado honesto es **pendiente** o **revisar**, no una falsa aprobación. Las situaciones que involucren prevención de daños pueden exigir intervención limitada, supervisión humana y reevaluación.
+**Criterio práctico:** eficacia o exactitud factual no bastan para justificar una acción con daño grave e injustificado. Si faltan evidencia, salvaguardas o autoridad para un efecto material, mantener pendiente, revisar o detener esa operación. La investigación independiente puede continuar dentro de su alcance autorizado.
 
-## English — a foundation carried into every later layer
+## English — concurrent commitments, not deferred truth
 
-**Ahiṃsā (non-harm) comes first; Viveka (contextual discernment) is required before Satya (truthful claims).** The ordering constrains action; it is not a ranking of persons, beliefs, or cultures.
+**Non-harm guides purposes and constrains means; contextual discernment examines the situation; truthfulness applies to every claim from the outset.** Responsibility defines legitimate scope, consequence review supports correction, and care preserves dignity and autonomy. These commitments operate together, not as stages that postpone honesty.
 
-- Consider foreseeable effects on people, non-human life, communities, and ecosystems; prefer prevention, least-harm alternatives and reversibility.
-- Examine context, competing risks, uncertainty, evidence quality, and the possibility of taking no action. Protective intervention should be proportionate; no one loses dignity because someone labels them “out of harmony”.
-- Express claims with source, date, version, and epistemic status. Update judgments when the situation or evidence changes; do not manufacture certainty or treat all conflicting claims as equally true.
-- Separate advice, documented review, authorization, and external execution. Preserve stop/repair paths and human accountability.
+- Consider foreseeable effects of action and inaction on people, non-human life, communities and ecosystems. Prefer proportionate, lower-harm alternatives and repairable choices.
+- Examine evidence, uncertainty, incentives and competing risks. No one loses dignity because a reviewer labels them out of harmony.
+- Attribute sources, dates, versions and epistemic status. Do not invent certainty, conceal material contrary evidence, or distort a source to confirm the project or its founder.
+- Separate advice, review, authorization and execution. Retain accountable owners, stop paths and correction mechanisms.
+- Preserve historical Satya–Dharma–Karma commitments; Viveka describes cross-cutting discernment, not their replacement.
+
+## Evidence may correct the protocol / La evidencia también corrige al protocolo
+
+A source, affected person or reproducible test may challenge the author, client, teacher, coordinator or framework itself. Preserve material disagreement and explain changes. Do not reward agreement with authority as a substitute for accuracy. Applying the framework privately does not authorize publishing that work or the underlying conversation.
 
 ## Mapping to the existing eight review questions
 
 | Existing field | Required ethical reading |
 | --- | --- |
 | `purpose` | Who is served, and is the purpose legitimate? |
-| `affected_parties` | Who or what could be affected, including bystanders, other living beings, and ecosystems? |
+| `affected_parties` | Who or what could be affected, including bystanders, other living beings and ecosystems? |
 | `harm` | What foreseeable harm, severity, reversibility, mitigation and residual risk exist? |
 | `uncertainty` | Which evidence or contextual judgment is missing, and what could change the conclusion? |
 | `alternatives` | What safer or less extractive option exists, including no action? |
-| `authority` | Who may authorize the **specific** consequential effect, under what limits? |
+| `authority` | Who may authorize the specific consequential effect, under what limits? |
 | `care` | Are autonomy, privacy, access, dignity, resources and ecological externalities considered? |
 | `repair` | How can harm be stopped, detected, remedied and documented? |
 
-### Operational boundaries / Límites operativos
+## Operational boundaries / Límites operativos
 
-- `decision.status = proceed` is a **recorded opinion**, not a deployment permit. `stop`, `revise` and `pending` remain valid outcomes.
-- This CLI validates document structure and file consistency. It **does not** decide whether non-harm, good discernment, truth, or environmental sustainability have actually been achieved.
-- A downstream system (e.g. an agent orchestrator or commercial decision engine) must implement and test its own safety/policy gates, human approvals, monitoring, and rollback. Citing this foundation alone does not enforce it.
-- No religious affiliation is required to use, criticize or revise these criteria. Apply them to concrete effects, not as scores of people.
+- `decision.status = proceed` records a position, not a deployment permit. `stop`, `revise` and `pending` remain valid outcomes.
+- The CLI validates document structure and file consistency. It does not establish whether non-harm, discernment, truth or sustainability have actually been achieved.
+- Downstream systems must implement and test their own controls, approvals, monitoring and rollback. A reference to this foundation does not enforce it.
+- Evidence quality, editorial status, human review, rights and publication permission are separate dimensions. Do not collapse them into a single «verified» label or silently change the v1 schema.
+- This is a contemporary methodological proposal, not a claim of spiritual authority. No religious affiliation is required to use, criticize or revise it; no moral score is assigned to people.

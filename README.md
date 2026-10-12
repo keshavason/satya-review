@@ -10,25 +10,19 @@ Una revisión legible de una entrega, vinculada a sus archivos. Responde ocho pr
 
 Prototipo 0.1 de KeshavaSon, basado en la metodología de [MiTrabajadorIA](https://mitrabajadoria.es/metodologia). Para equipos que necesitan explicar qué revisaron, qué falta y qué cambió. No exige adhesión religiosa ni puntúa personas.
 
-## Fundamento ético: no se olvida el primer ladrillo
+## SATYA Commons v0.1 — propuesta documental pública
 
-La secuencia **Ahiṃsā (no daño) → Viveka (discernimiento) → Satya (verdad)** orienta la revisión: examinar primero los daños a seres, personas y ecosistemas; discernir contexto, incertidumbre y alternativas; y declarar honestamente lo observado y lo desconocido **desde el comienzo y durante toda la revisión**. Responsabilidad y reparación atraviesan todas las etapas.
+Empieza por la [presentación y guía de lectura de los protocolos](docs/SATYA-COMMONS.md). Es una propuesta versionada para la cooperación responsable entre personas y agentes, abierta a crítica y evaluación; no una red desplegada ni una certificación.
 
-Consulta [el fundamento ético y sus límites](docs/ETHICAL-FOUNDATION.md). Esta precedencia **no está automatizada ni demostrada por los hashes**: el programa documenta una revisión, pero no certifica que la decisión sea ética ni autoriza efectos externos.
+El [fundamento ético](docs/ETHICAL-FOUNDATION.md) integra Ahiṃsā, Viveka, Satya, Dharma, Karma y Prema como compromisos conjuntos: cuidado, discernimiento, honestidad desde el principio, responsabilidad y corrección de consecuencias. No se pospone la verdad hasta completar otros pasos.
 
-## Bucle reflexivo de agentes y espejos (propuesta)
+El [bucle reflexivo](docs/REFLECTIVE-LOOP.md) propone agente, espejo crítico, maestro que enseña mejoras transferibles y metarrevisión proporcional. La [expansión federada](docs/FEDERATED-EXPANSION.md) conserva referencias y adaptadores locales, permite copias identificadas y preservación bajo la licencia aplicable, y evita actualizaciones de política o permisos heredados automáticamente.
 
-El [protocolo de revisión multinivel](docs/REFLECTIVE-LOOP.md) explora el ciclo **agente → espejo crítico → guía falible → metarrevisión**, con límites, disenso documentado, efectos acumulativos y reapertura cuando cambian las evidencias. Mantiene Ahiṃsā → Viveka → Satya en cada vuelta. **Es diseño revisable, no una función automática del prototipo 0.1.**
+El [contrato de adopción](docs/ADOPTION-CONTRACT.md) distingue leer de adoptar una revisión exacta. La [carta de presencia sin posesión](docs/PRESENCE-WITHOUT-POSSESSION.md) propone escucha, libertad espiritual y respeto a la intención presente sin puntuar estados interiores ni inducir dependencia.
 
-## Expansión federada sin duplicación (propuesta)
+**Esta publicación documental no conecta aplicaciones, cambia `satya-review.v1`, activa revisores ni demuestra eficacia comparativa.** No se afirma revisión humana independiente ni validación operativa. Aplicar los protocolos en privado no autoriza publicar los proyectos, conversaciones o datos correspondientes.
 
-La [arquitectura SATYA Commons](docs/FEDERATED-EXPANSION.md) propone **una referencia versionada y adaptaciones voluntarias por proyecto**, sin copiar íntegramente el fundamento ni conferir permisos entre aplicaciones. AJUTIA aporta la gobernanza cooperativa, MiTrabajadorIA la formación y maestría de dominio, INFoBOT la gestión de fuentes; SATYA Review conserva la trazabilidad documental. Las aplicaciones hermanas no se han modificado ni conectado automáticamente mediante esta propuesta. El [contrato mínimo de adopción](docs/ADOPTION-CONTRACT.md) distingue leer una propuesta de adoptarla formalmente: exige responsable, revisión fijada por commit, diferencias, evidencia y derecho de retirada. **Enlaces a ramas de borrador son mutables, no adopciones verificadas.**
-
-## Presencia sin posesión: libertad interior y acompañamiento (propuesta)
-
-La [carta de presencia sin posesión](docs/PRESENCE-WITHOUT-POSSESSION.md) traduce respeto radical, escucha, posibilidad de silencio, libertad espiritual y cuidado del presente en criterios de interacción y pruebas adversariales. Honra el significado personal de sat-cit-ānanda sin imponer creencias, medir estados interiores ni prometer felicidad. Es una capa voluntaria para futuras adaptaciones de AJUTIA, MiTrabajadorIA e INFoBOT; **no está implementada ni certificada**.
-
-La [auditoría cruzada del 12 de octubre](docs/CROSS-REPOSITORY-AUDIT-2026-10-12.md) documenta hallazgos corregidos, evidencias de CI y riesgos pendientes entre los repositorios. No es revisión humana independiente ni prueba de funcionamiento federado.
+La [auditoría cruzada anterior](docs/CROSS-REPOSITORY-AUDIT-2026-10-12.md) conserva el estado histórico de las ramas y comprobaciones que examinó; no describe automáticamente el candidato actual. Para conocer el alcance de publicación consulta la [presentación](docs/SATYA-COMMONS.md) y los registros reales de PR y CI. El indicador superior corresponde a `main`, no a cualquier rama ni a la eficacia del protocolo.
 
 ## Uso local
 
@@ -50,7 +44,7 @@ node bin/satya.mjs report ./mi-entrega --lang es
 
 `verify` distingue integridad de archivos y estado documental. `documented` significa campos cumplimentados, incluso si la decisión anotada es detenerse. `match` significa coincidencia respecto al recibo local disponible. Ninguno autoriza publicar. Una decisión pendiente devuelve código 3; una discrepancia o error, 2; una revisión documentada con coincidencia, 0. Los comandos imprimen resultados; `report` imprime Markdown.
 
-Guarda el informe **fuera** de la entrega si quieres conservar intacto el inventario. `init` no sobrescribe una revisión existente. Examina los errores antes de volver a capturar.
+Guarda el informe **fuera** de la entrega para conservar intacto el inventario. `init` no sobrescribe una revisión existente. Examina los errores antes de volver a capturar.
 
 ## Alcance de la comprobación
 
@@ -76,8 +70,8 @@ node bin/satya.mjs verify examples/changed
 npm test
 ```
 
-GitHub Actions ejecuta esta misma suite con Node.js 22 en Linux y Windows. El indicador superior muestra el estado actual de esa comprobación; no certifica los usos que se hagan de la herramienta.
+GitHub Actions ejecuta esta misma suite con Node.js 22 en Linux y Windows. Consulta [el alcance probado](docs/VALIDATION.md), [el modelo de revisión](docs/REVIEW.md), [las limitaciones y atribuciones](docs/DECISION.md) y [el ejemplo de módulo fiscal futuro](docs/FISCAL-MODULE.md).
 
-Consulta [el alcance probado](docs/VALIDATION.md), [el modelo de revisión](docs/REVIEW.md), [las limitaciones y atribuciones](docs/DECISION.md) y [el ejemplo de módulo fiscal futuro](docs/FISCAL-MODULE.md). Las pruebas y el uso interno no demuestran demanda de mercado ni ahorro económico. No hay telemetría, llamadas de red, dependencias de ejecución ni API de pago en esta herramienta. Ejecutarla y mantenerla sí tiene coste de equipo y tiempo.
+Las pruebas y el uso interno no demuestran demanda de mercado ni ahorro económico. No hay telemetría, llamadas de red, dependencias de ejecución ni API de pago en esta herramienta. Ejecutarla y mantenerla sí tiene coste de equipo y tiempo.
 
-Licencia MIT para este código original. No incorpora la biblioteca VeriFactu ni cambia su licencia. Si esta forma de revisar te resulta útil, puedes conocer [la metodología y servicios de MiTrabajadorIA](https://mitrabajadoria.es/metodologia).
+El código original y su documentación asociada se ofrecen bajo la [licencia MIT del repositorio](LICENSE). Las recomendaciones metodológicas no añaden restricciones a esa licencia. No se incorpora la biblioteca VeriFactu ni cambia su licencia. Para conocer el contexto de trabajo, consulta la [metodología de MiTrabajadorIA](https://mitrabajadoria.es/metodologia).

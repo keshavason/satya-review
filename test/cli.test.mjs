@@ -1,13 +1,16 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import fs from 'node:fs';
 import { createHash } from 'node:crypto';
 import { spawnSync } from 'node:child_process';
+import { Worker } from 'node:worker_threads';
 import {
   mkdir, mkdtemp, readFile, writeFile, readdir, realpath, rm, symlink, unlink,
 } from 'node:fs/promises';
 import path from 'node:path';
 import os from 'node:os';
 import { fileURLToPath, pathToFileURL } from 'node:url';
+import { report as evaluateReport } from '../src/core.mjs';
 
 const projectRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const cliPath = path.join(projectRoot, 'bin', 'satya.mjs');
@@ -266,6 +269,69 @@ test('report escapes untrusted HTML and Markdown in both languages', async t => 
     reports.push(report);
   }
   assert.notEqual(reports[0], reports[1], 'Language selection must affect the report');
+});
+
+test('report status and visible fields come from the same review snapshot', async t => {
+  const { root } = await documented(t, review => ({
+    ...review,
+    title: 'Snapshot A',
+    decision: { status: 'stop', rationale: 'Stop from snapshot A.' },
+  }));
+  await capture(root);
+  const replacement = await readJson(reviewPath(root));
+  replacement.title = 'Snapshot B';
+  replacement.decision = { status: 'proceed', rationale: 'Proceed from snapshot B.' };
+  const replacementBytes = `${JSON.stringify(replacement, null, 2)}\n`;
+
+  const originalRead = fs.readFileSync;
+  const originalClose = fs.closeSync;
+  let reviewReads = 0;
+  let replaceAfterClose = false;
+  fs.readFileSync = function patchedRead(...args) {
+    const contents = originalRead.apply(this, args);
+    if (Buffer.isBuffer(contents) && contents.includes(Buffer.from('"schema": "satya-review.v1"'))) {
+      reviewReads += 1;
+      if (reviewReads === 2) replaceAfterClose = true;
+    }
+    return contents;
+  };
+  fs.closeSync = function patchedClose(...args) {
+    const result = originalClose.apply(this, args);
+    if (replaceAfterClose) {
+      replaceAfterClose = false;
+      fs.writeFileSync(reviewPath(root), replacementBytes);
+    }
+    return result;
+  };
+  try {
+    const evaluated = evaluateReport(root, 'en');
+    assert.equal(evaluated.result.integrity, 'match');
+    assert.equal(evaluated.result.review, 'documented');
+    assert.match(evaluated.markdown, /Title: Snapshot A/);
+    assert.match(evaluated.markdown, /Declared decision: \*\*stop\*\*/);
+    assert.ok(!evaluated.markdown.includes('Snapshot B'));
+    assert.ok(!evaluated.markdown.includes('Proceed from snapshot B'));
+  } finally {
+    fs.readFileSync = originalRead;
+    fs.closeSync = originalClose;
+  }
+});
+
+test('verification remains usable from a Worker Thread', async () => {
+  const moduleUrl = pathToFileURL(path.join(projectRoot, 'src', 'core.mjs')).href;
+  const example = path.join(projectRoot, 'examples', 'complete');
+  const result = await new Promise((resolve, reject) => {
+    const worker = new Worker(`
+      import { parentPort } from 'node:worker_threads';
+      import { verify } from ${JSON.stringify(moduleUrl)};
+      parentPort.postMessage(verify(${JSON.stringify(example)}));
+    `, { eval: true, type: 'module' });
+    worker.once('message', resolve);
+    worker.once('error', reject);
+    worker.once('exit', code => { if (code !== 0) reject(new Error(`Worker exited with ${code}`)); });
+  });
+  assert.equal(result.integrity, 'match');
+  assert.equal(result.review, 'documented');
 });
 
 test('a .satya directory link cannot redirect init writes outside the project', async t => {

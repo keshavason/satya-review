@@ -11,6 +11,7 @@ export const LIMITS = Object.freeze([
   'Hashes compare content; they are not signatures, proof of authorship, or verified reviewer identity.',
   'A documented review is not approval, certification, legal compliance, or permission to act; a stop decision remains a stop.',
   'This local snapshot is not a filesystem transaction. Stop concurrent writes while capturing or verifying; a file may change after a check.',
+  'Identity checks and final-file descriptors reject observed substitutions, but portable Node APIs do not provide openat-style traversal. Do not use a project tree writable by an untrusted concurrent actor.',
   'The receipt and review are editable local files. An actor able to replace both can create a new internally consistent receipt.',
   'Only regular files are inventoried. Root .git and .satya directories are excluded; permissions and empty directories are not recorded.',
 ]);
@@ -46,11 +47,19 @@ function ensureDirectory(directory, label) {
   return stat;
 }
 
+function sameDirectory(a, b) {
+  return a.dev === b.dev && a.ino === b.ino && a.isDirectory() && b.isDirectory();
+}
+
 function context(root, createMetadata = false) {
   if (typeof root !== 'string' || root.length === 0) fail('A project root is required.');
   const supplied = path.resolve(root);
-  ensureDirectory(supplied, 'Project root');
+  const suppliedIdentity = ensureDirectory(supplied, 'Project root');
   const canonical = fs.realpathSync(supplied);
+  const rootIdentity = ensureDirectory(canonical, 'Project root');
+  if (!sameDirectory(rootIdentity, suppliedIdentity)) {
+    fail('Project root changed while resolving it.');
+  }
   const metadata = path.join(canonical, '.satya');
   if (createMetadata && !exists(metadata)) {
     try { fs.mkdirSync(metadata, { mode: 0o700 }); }
@@ -155,7 +164,7 @@ export function validateReceipt(receipt) {
 function inventory(ctx) {
   const result = [];
   function walk(directory, prefix) {
-    ensureDirectory(directory, 'Inventory directory');
+    const before = ensureDirectory(directory, 'Inventory directory');
     const names = fs.readdirSync(directory).sort();
     for (const name of names) {
       const filename = path.join(directory, name);
@@ -171,6 +180,9 @@ function inventory(ctx) {
         result.push({ path: relative, size: contents.byteLength, sha256: digest(contents) });
       } else fail(`Not a regular file or directory: ${relative}`);
     }
+    if (!sameDirectory(before, ensureDirectory(directory, 'Inventory directory'))) {
+      fail(`Inventory directory changed while reading: ${prefix || '.'}`);
+    }
   }
   walk(ctx.root, '');
   return result.sort((a, b) => a.path < b.path ? -1 : a.path > b.path ? 1 : 0);
@@ -178,7 +190,7 @@ function inventory(ctx) {
 
 function atomicJson(ctx, name, value, exclusive = false) {
   ensureDirectory(ctx.root, 'Project root');
-  ensureDirectory(ctx.metadata, '.satya');
+  const metadataBefore = ensureDirectory(ctx.metadata, '.satya');
   const target = path.join(ctx.metadata, name);
   if (exists(target)) {
     if (exclusive) fail(`${name} already exists; it was not overwritten.`);
@@ -194,7 +206,9 @@ function atomicJson(ctx, name, value, exclusive = false) {
     fs.closeSync(fd);
     fd = undefined;
     ensureDirectory(ctx.root, 'Project root');
-    ensureDirectory(ctx.metadata, '.satya');
+    if (!sameDirectory(metadataBefore, ensureDirectory(ctx.metadata, '.satya'))) {
+      fail('.satya changed during the metadata write.');
+    }
     if (exclusive) fs.linkSync(temporary, target);
     else {
       if (exists(target)) {
@@ -239,19 +253,23 @@ export function capture(root) {
     manifest_sha256: digest(JSON.stringify(files)),
   };
   atomicJson(ctx, 'receipt.json', receipt);
-  return { status: 'captured', created_at: receipt.created_at, file_count: files.length, ...verify(root) };
+  const evaluated = evaluate(root);
+  return { status: 'captured', created_at: receipt.created_at, file_count: files.length, ...evaluated.result };
 }
 
-export function verify(root) {
+function evaluate(root) {
   const changes = { added: [], removed: [], modified: [] };
   let decision = null;
   try {
     const ctx = context(root);
-    const contents = metadataContents(ctx, 'review.json');
-    const review = parseJson(contents, 'review.json');
+    const initial = {
+      review: metadataContents(ctx, 'review.json'),
+      receipt: metadataContents(ctx, 'receipt.json'),
+    };
+    const review = parseJson(initial.review, 'review.json');
     const completeness = validateReview(review);
     decision = review.decision;
-    const receipt = validateReceipt(parseJson(metadataContents(ctx, 'receipt.json'), 'receipt.json'));
+    const receipt = validateReceipt(parseJson(initial.receipt, 'receipt.json'));
     const current = inventory(ctx);
     const expected = new Map(receipt.files.map((entry) => [entry.path, entry]));
     for (const entry of current) {
@@ -261,20 +279,32 @@ export function verify(root) {
       expected.delete(entry.path);
     }
     changes.removed = [...expected.keys()].sort();
-    const reviewChanged = digest(contents) !== receipt.review_sha256;
+    const reviewChanged = digest(initial.review) !== receipt.review_sha256;
     const changed = reviewChanged || Object.values(changes).some((items) => items.length > 0);
-    if (digest(metadataContents(ctx, 'review.json')) !== digest(contents)) fail('Review changed during verification.');
-    return {
+    const final = {
+      review: metadataContents(ctx, 'review.json'),
+      receipt: metadataContents(ctx, 'receipt.json'),
+    };
+    if (digest(final.review) !== digest(initial.review)) fail('Review changed during verification.');
+    if (digest(final.receipt) !== digest(initial.receipt)) fail('Receipt changed during verification.');
+    return { result: {
       integrity: changed ? 'changed' : 'match',
       review: reviewChanged ? 'changed' : completeness.status,
       decision,
       changes,
       pending: completeness.pending,
       limits: [...LIMITS],
-    };
+    }, review };
   } catch (error) {
-    return { integrity: 'invalid', review: 'invalid', decision, changes, error: error.message, limits: [...LIMITS] };
+    return {
+      result: { integrity: 'invalid', review: 'invalid', decision, changes, error: error.message, limits: [...LIMITS] },
+      review: null,
+    };
   }
+}
+
+export function verify(root) {
+  return evaluate(root).result;
 }
 
 function escapeMarkdown(value) {
@@ -285,17 +315,10 @@ function escapeMarkdown(value) {
     .replace(/\r\n?|\n/g, ' ');
 }
 
-export function renderReport(root, lang = 'en') {
+export function report(root, lang = 'en') {
   if (!['es', 'en'].includes(lang)) fail('Report language must be es or en.');
   const es = lang === 'es';
-  const result = verify(root);
-  let review = null;
-  try {
-    const ctx = context(root);
-    const candidate = parseJson(metadataContents(ctx, 'review.json'), 'review.json');
-    validateReview(candidate);
-    review = candidate;
-  } catch { /* Invalid content is not trusted as a review. */ }
+  const { result, review } = evaluate(root);
   const labels = es ? {
     purpose: 'Propósito', affected_parties: 'Personas afectadas', harm: 'Daño', uncertainty: 'Incertidumbre',
     alternatives: 'Alternativas', authority: 'Autoridad', care: 'Cuidado y recursos', repair: 'Reparación',
@@ -336,12 +359,17 @@ export function renderReport(root, lang = 'en') {
     'Los hashes comparan contenido; no son firmas, pruebas de autoría ni verificación de la identidad del revisor.',
     'Una revisión documentada no equivale a aprobación, certificación, cumplimiento legal ni permiso para actuar. La decisión stop sigue siendo una decisión de detenerse.',
     'La captura local no es una transacción del sistema de archivos. Detenga las escrituras concurrentes al capturar o verificar; un archivo puede cambiar después de comprobarse.',
+    'Las comprobaciones de identidad y los descriptores de archivos finales rechazan sustituciones observadas, pero las API portables de Node no ofrecen un recorrido equivalente a openat. No use un árbol de proyecto modificable por un actor concurrente no confiable.',
     'El recibo y la revisión son archivos locales editables. Quien pueda sustituir ambos puede crear un recibo nuevo internamente coherente.',
     'El inventario contiene archivos regulares. Se excluyen los directorios .git y .satya de la raíz; no se registran permisos ni directorios vacíos.',
     'Las respuestas, fuentes, clasificaciones y decisiones se declaran, no se contrastan automáticamente. No se ejecutan pruebas ni se consulta la red.',
   ] : [...LIMITS, 'Answers, sources, classifications, and decisions are declared, not independently checked. No tests are executed and no network is queried.'];
   lines.push(...limits.map((limit) => `- ${limit}`), '');
-  return lines.join('\n');
+  return { markdown: lines.join('\n'), result };
+}
+
+export function renderReport(root, lang = 'en') {
+  return report(root, lang).markdown;
 }
 
 export function exitCode(result) {
